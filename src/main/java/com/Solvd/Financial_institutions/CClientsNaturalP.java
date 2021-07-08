@@ -1,12 +1,10 @@
 package com.Solvd.Financial_institutions;
 
 public class CClientsNaturalP extends CClientsBase {//Клиент -> Физ. лицо
-    String ClientMale;// = "Male";
-    int clientAge;// = 35;
+    String ClientMale;
+    int clientAge;
 
     CClientsNaturalP() {
-        //clientName = "Marik";
-        //clientMoney = 20;
     }
     CClientsNaturalP(String name, int money, String ClientMale, int clientAge){
         super(name, money);

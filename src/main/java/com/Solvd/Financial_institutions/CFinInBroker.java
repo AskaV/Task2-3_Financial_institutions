@@ -1,18 +1,22 @@
 package com.Solvd.Financial_institutions;
 
-public class CFinInBroker extends CFinInBase { //Финансовый институт -> Брокер
+public class CFinInBroker extends CFinInBase implements CIntSpeak, CIntGiveMoney{ //Финансовый институт -> Брокер
     String param;
 
     CFinInBroker() {
-//        instMoney = 1003;
-//        instName = "Brokik";
-//        currency = "EUR";
-//        creditPosibility = false;
     }
 
     CFinInBroker(int instMoney, String instName, String currency, boolean creditPosibility, String param){
         super(instMoney, instName, currency, creditPosibility);
         this.param = param;
+    }
+
+
+    public void speaker() {
+        System.out.println("Broker say sm.");
+    }
+    public void give_money() {
+        System.out.println("Broker say: I can give money");
     }
 
     public void rCompanyIcon() {
@@ -47,4 +51,6 @@ public class CFinInBroker extends CFinInBase { //Финансовый инсти
         int a = param.hashCode() * super.hashCode();
         return a;
     }
+
+
 }

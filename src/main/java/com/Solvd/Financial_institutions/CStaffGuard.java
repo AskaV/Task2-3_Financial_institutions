@@ -3,10 +3,7 @@ package com.Solvd.Financial_institutions;
 public class CStaffGuard extends CStaffBase {//Персонал -> Огранник
     int roomnumber;
 
-
-    CStaffGuard() { // явное объявление конструктора по умолчанию
-        //stuffName = "Vasya";
-        //stuffAge = 34;
+    CStaffGuard() {
     }
 
     CStaffGuard(String stuffName, int stuffAge, int salary, int roomnumber) {

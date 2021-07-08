@@ -4,15 +4,14 @@ public class CFinInPensionFund extends CFinInBase {//Финансовый инс
     String talisman ;
 
     CFinInPensionFund() {
-//        instMoney = 30000;
-//        instName = "Пенсионеры и пенсионерочки";
-//        currency = "UAH";
-//        creditPosibility = false;
     }
 
     CFinInPensionFund(int instMoney, String insrName, String currency, boolean creditPosibility, String talisman){
         super(instMoney, insrName, currency, creditPosibility);
         this.talisman = talisman;
+    }
+    public void give_money() {
+        System.out.println("Broker say: I can give money");
     }
 
     @Override

@@ -7,10 +7,6 @@ public class CFinInInsurance extends CFinInBase {//Финансовый инст
     String tarifnyPaket_04 = "Family+";
 
     CFinInInsurance() {
-//        instMoney = 999;
-//        instName = "Insurance";
-//        currency = "EUR";
-//        creditPosibility = false;
     }
 
     CFinInInsurance(int instMoney, String insrName, String currency, boolean creditPosibility){

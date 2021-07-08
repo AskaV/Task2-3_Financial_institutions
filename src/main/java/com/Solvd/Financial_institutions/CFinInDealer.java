@@ -1,18 +1,21 @@
 package com.Solvd.Financial_institutions;
 
-public class CFinInDealer extends CFinInBase { //Финансовый институт -> Диллер
+public class CFinInDealer extends CFinInBase implements CIntSpeak,  CIntGiveMoney{ //Финансовый институт -> Диллер
     String param;
 
     CFinInDealer() {
-//        instMoney = 1004;
-//        instName = "Dillik";
-//        currency = "USD";
-//        creditPosibility = false;
     }
 
     CFinInDealer(int instMoney, String instName, String currency, boolean creditPosibility, String param){
         super(instMoney, instName, currency, creditPosibility);
         this.param = param;
+    }
+
+    public void speaker() {
+        System.out.println("Dealer say sm.");
+    }
+    public void give_money() {
+        System.out.println("Dealer say : I can give money");
     }
 
     public void rCompanyIcon() {

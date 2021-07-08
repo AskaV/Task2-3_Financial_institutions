@@ -32,7 +32,7 @@ public class Main {
         CFInInBank Bank_2 = new CFInInBank(14000, "Kotobank", "UAH", true, 600);
         CFinInInsurance Insurance_01 = new CFinInInsurance(998, "Insurance","EUR",false);
         CFinInPensionFund PensionFund_01 = new CFinInPensionFund(999, "Пенсионеры и пенсионерочки", "UAH", false,"Butterfly");
-        CFinInStockExchange StockExchange = new CFinInStockExchange(1000, "nStockExchange", "EUR", false,"www.URL.com"  );
+        CFinInStockExchange StockExchange_01 = new CFinInStockExchange(1000, "nStockExchange", "EUR", false,"www.URL.com"  );
         CFinInInvestmentCompany InvestmentCompany_01 = new CFinInInvestmentCompany(1001, "Investment Co", "EUR", false, "Petya");
         CFinInPopshop Popshop_01 = new CFinInPopshop(1002, "Finik", "EUR", false, "Галочка");
         CFinInDealer Dealer_01 = new CFinInDealer(1003, "Dillik", "USD", false, "multy" );
@@ -62,7 +62,7 @@ public class Main {
         Insurance_01.rTarifnyPaket();
         InvestmentCompany_01.rCompanyDirector();
         Dealer_01.sReqvPopshop(Popshop_01);
-        Broker_01.sReqv(StockExchange);
+        Broker_01.sReqv(StockExchange_01);
         Broker_01.sReqv(InvestmentCompany_01);
 
         //toString() examples
@@ -71,7 +71,7 @@ public class Main {
         System.out.println(Bank_2.toString());
         System.out.println(Insurance_01.toString());
         System.out.println(PensionFund_01.toString());
-        System.out.println(StockExchange.toString());
+        System.out.println(StockExchange_01.toString());
         System.out.println(InvestmentCompany_01.toString());
         System.out.println(Popshop_01.toString());
         System.out.println(Dealer_01.toString());
@@ -96,7 +96,7 @@ public class Main {
         System.out.println(Bank_2.hashCode());
         System.out.println(Insurance_01.hashCode());
         System.out.println(PensionFund_01.hashCode());
-        System.out.println(StockExchange.hashCode());
+        System.out.println(StockExchange_01.hashCode());
         System.out.println(InvestmentCompany_01.hashCode());
         System.out.println(Popshop_01.hashCode());
         System.out.println(Dealer_01.hashCode());
@@ -108,5 +108,47 @@ public class Main {
         System.out.println(NaturalP_01.hashCode());
         System.out.println(Legallp_01.hashCode());
         System.out.println(Government_01.hashCode());
+
+        //Interfaces example
+
+        System.out.println();
+        if (Broker_01 instanceof CIntSpeak){
+            CIntSpeak speaker = (CIntSpeak) Broker_01;
+            speaker.speaker();
+        }
+        if (Dealer_01 instanceof CIntSpeak){
+            CIntSpeak speaker = (CIntSpeak) Dealer_01;
+            speaker.speaker();
+        }
+        if (Broker_01 instanceof CIntGiveMoney){
+            CIntGiveMoney gMoney = (CIntGiveMoney) Broker_01;
+            gMoney.give_money();
+        }
+        if (Dealer_01 instanceof CIntGiveMoney){
+            CIntGiveMoney gMoney = (CIntGiveMoney) Dealer_01;
+            gMoney.give_money();
+        }
+
+        if (StockExchange_01 instanceof CIntGetItem){
+            CIntGetItem get_item = (CIntGetItem) StockExchange_01;
+            get_item.get_item();
+        }
+        if (Popshop_01 instanceof CIntGetItem){
+            CIntGetItem get_item = (CIntGetItem) Popshop_01;
+            get_item.get_item();
+        }
+        if (Government_01 instanceof CIntRaiseRate){
+            CIntRaiseRate raisRate = (CIntRaiseRate)Government_01;
+            raisRate.raisRate();
+        }
+        if (Bank_1 instanceof CIntRaiseRate){
+            CIntRaiseRate raisRate = (CIntRaiseRate) Bank_1;
+            raisRate.raisRate();
+        }
+        if (Legallp_01 instanceof CIntChangeRegAdress){
+            CIntChangeRegAdress change_adress = (CIntChangeRegAdress) Legallp_01;
+            change_adress.change_adress();
+        }
+
     }
 }

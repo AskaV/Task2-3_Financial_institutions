@@ -1,17 +1,20 @@
 package com.Solvd.Financial_institutions;
 
-public class CClientsLegalP extends CClientsBase {//Клиент -> Юр. лицо
+public class CClientsLegalP extends CClientsBase implements CIntChangeRegAdress{//Клиент -> Юр. лицо
     String address;
 
-
     CClientsLegalP() {
-        //clientName = "\"OOO Company\"";
-        //clientMoney = 10000;
     }
 
     CClientsLegalP(String name, int money, String address){
         super(name, money);
         this. address =  address;
+    }
+
+    public void change_adress(){
+        System.out.print("Previous adress = "+ this.address);
+        this.address = "new adress of streat";
+        System.out.println(". New adress = "+ this.address);
     }
 
     private void payNDS(int sumOfPurchase, CClientsGovernment Government) {

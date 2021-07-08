@@ -1,18 +1,17 @@
 package com.Solvd.Financial_institutions;
 
-public class CFinInPopshop extends CFinInBase { //Финансовый институт -> Ломбард
+public class CFinInPopshop extends CFinInBase implements CIntGetItem{ //Финансовый институт -> Ломбард
     String icon;
 
     CFinInPopshop() {
-//        instMoney = 1002;
-//        instName = "Finik";
-//        currency = "EUR";
-//        creditPosibility = false;
     }
 
     CFinInPopshop(int instMoney, String instName, String currency, boolean creditPosibility, String icon){
         super(instMoney, instName, currency, creditPosibility);
         this.icon = icon;
+    }
+    public void get_item() {
+        System.out.println("Popshop get smt item");
     }
 
     public void rCompanyIcon() {

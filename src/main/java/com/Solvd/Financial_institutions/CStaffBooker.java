@@ -4,9 +4,6 @@ public class CStaffBooker extends CStaffBase {//Персонал -> Бухгал
     String pet;
 
     CStaffBooker() {
-        // stuffName = "Marina";
-        //stuffAge = 48;
-        //salary = 1200;
     }
     CStaffBooker(String stuffName, int stuffAge, int salary, String pet) {
         super(stuffName, stuffAge, salary);

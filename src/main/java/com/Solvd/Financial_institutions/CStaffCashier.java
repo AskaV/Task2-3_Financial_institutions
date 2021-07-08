@@ -3,10 +3,7 @@ package com.Solvd.Financial_institutions;
 public class CStaffCashier extends CStaffBase {//Персонал -> Кассир
     String car;
 
-    CStaffCashier() {// явное объявление конструктора по умолчанию
-        //stuffName = "Karina";
-        //stuffAge = 25;
-        //salary = 1000;
+    CStaffCashier() {
     }
 
     CStaffCashier(String stuffName, int stuffAge, int salary, String car) {

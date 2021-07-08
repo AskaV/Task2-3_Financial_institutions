@@ -1,13 +1,10 @@
 package com.Solvd.Financial_institutions;
 
-public class CClientsGovernment extends CClientsBase {//Клиент -> Государство
+public class CClientsGovernment extends CClientsBase implements CIntRaiseRate{//Клиент -> Государство
     int perCent; //20
     int foundationDate; //1900
 
     CClientsGovernment() {
-
-        //clientName = "Government";
-        //clientMoney = 1000000000;
     }
 
     CClientsGovernment(String name, int money, int perCent, int foundationDate){
@@ -22,6 +19,11 @@ public class CClientsGovernment extends CClientsBase {//Клиент -> Госу
     public void takeMoney(int money) {
         this.clientMoney = this.clientMoney + money;
     }
+
+    public void raisRate() {
+        System.out.println("Rais rate for smt. %");
+    }
+
 
     @Override
     public String toString() {

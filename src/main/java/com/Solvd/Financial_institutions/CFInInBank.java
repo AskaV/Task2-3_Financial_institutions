@@ -1,13 +1,9 @@
 package com.Solvd.Financial_institutions;
 
-public class CFInInBank extends CFinInBase{//Финансовый институт -> Банк
+public class CFInInBank extends CFinInBase implements CIntRaiseRate{//Финансовый институт -> Банк
     int loanPercentage;//процент от денег что есть у клиента на который может быть одобрен кредит
 
-    CFInInBank(){ // явное объявление конструктора по умолчанию
-//        instMoney = 14000;
-//        currency = "UAH";
-//        instName = "Kotobank";
-//        creditPosibility = true;
+    CFInInBank(){
     }
 
     CFInInBank(int instMoney, String instName, String currency, boolean creditPosibility, int loanPercentage){
@@ -17,6 +13,13 @@ public class CFInInBank extends CFinInBase{//Финансовый институ
 
     public int CheckCreditworthiness(CClientsNaturalP NaturalP_id){
         return NaturalP_id.clientMoney*loanPercentage/100;
+    }
+    public void give_money() {
+        System.out.println("Bank say: I can give money");
+    }
+
+    public void raisRate() {
+        System.out.println("Rais rate for smt. %");
     }
 
 

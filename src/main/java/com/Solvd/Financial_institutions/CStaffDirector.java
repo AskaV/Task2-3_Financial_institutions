@@ -5,9 +5,6 @@ public class CStaffDirector extends CStaffBase {//Персонал -> Дирек
     CStaffGuard guard;// = new CStuffGuard();
 
     CStaffDirector() {
-        //stuffName = "Durik";
-        //stuffAge = 18;
-        //salary = 1000000;
     }
 
     CStaffDirector(String stuffName, int stuffAge, int salary, String priority, CStaffGuard guard) {

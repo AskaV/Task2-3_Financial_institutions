@@ -1,18 +1,18 @@
 package com.Solvd.Financial_institutions;
 
-public class CFinInStockExchange extends CFinInBase {//Финансовый институт ->Фондовая биржа
+public class CFinInStockExchange extends CFinInBase implements  CIntGetItem{//Финансовый институт ->Фондовая биржа
     String URL; //= "www.URL.com";
 
     CFinInStockExchange() {
-        //instMoney = 1008;
-        //instName = "nStockExchange";
-       // currency = "EUR";
-       // creditPosibility = false;
     }
     CFinInStockExchange(int instMoney, String instName, String currency, boolean creditPosibility, String URL){
         super(instMoney, instName, currency, creditPosibility);
         this.URL = URL;
     }
+    public void get_item() {
+        System.out.println("StockExchange get smt item");
+    }
+
 
     public void rCompanyIcon() {
         System.out.println("Our companys URL: " + URL);

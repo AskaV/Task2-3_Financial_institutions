@@ -4,10 +4,6 @@ public class CFinInInvestmentCompany extends CFinInBase {//Финансовый 
     String director;
 
     CFinInInvestmentCompany() {
-//        instMoney = 1001;
-//        instName = "InvestmentCompany";
-//        currency = "EUR";
-//        creditPosibility = false;
     }
 
     CFinInInvestmentCompany(int instMoney, String insrName, String currency, boolean creditPosibility, String director){
