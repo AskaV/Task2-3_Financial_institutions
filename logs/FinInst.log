@@ -959,3 +959,893 @@ Our company has 4 tariff packages. Their names: Base+, Base+1, Base+2, Family+
 2021-07-15 22:30:18,972 INFO c.s.f.c.ClientsLegalP [main] Previous address = Kyiv, Khreshchatyk 4
 2021-07-15 22:30:18,973 INFO c.s.f.c.ClientsLegalP [main] . New address = new address of street
 2021-07-15 22:30:18,973 INFO c.s.f.u.BusinessLogic [main] ------------------------Generic examples------------------------
+2021-07-16 00:15:24,520 INFO c.s.f.u.BusinessLogic [main] ------------------------All created class to Loger------------------------
+2021-07-16 00:15:24,533 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:15:24,533 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:15:24,533 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 00:15:24,533 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 00:15:24,534 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 00:15:24,534 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 00:15:24,535 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 00:15:24,535 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 00:15:24,535 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 00:15:24,542 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 00:15:24,543 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 00:15:24,544 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 00:15:24,544 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 00:15:24,547 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 00:15:24,548 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = "OOO Company", Client money = 10000, address = Kyiv, Khreshchatyk 4
+2021-07-16 00:15:24,549 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Government, Client money = 1000000000, Credit percent = 20, Foundation date 1900
+2021-07-16 00:15:24,549 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 00:15:24,549 INFO c.s.f.c.ClientsNaturalP [main] Cashier ask "Kotobank" financial institute about bank possibility: 
+2021-07-16 00:15:24,551 INFO c.s.f.c.ClientsNaturalP [main] Money in the bank:14000, currency: UAH
+2021-07-16 00:15:24,554 INFO c.s.f.s.StaffCashier [main] Karina say: The bank can issue a loan in the amount 120 UAH for you
+2021-07-16 00:15:24,554 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 00:15:24,554 INFO c.s.f.u.BusinessLogic [main] ------------------------Other class interaction examples------------------------
+2021-07-16 00:15:24,554 INFO c.s.f.f.FinInPensionFund [main] Can't issue a loan. You need to be of retirement age
+2021-07-16 00:15:24,554 INFO c.s.f.f.FinInBase [main]  Kotobank can issue a loan
+2021-07-16 00:15:24,554 INFO c.s.f.s.StaffGuard [main] You need to go to the cashier. Go further into the room
+2021-07-16 00:15:24,554 INFO c.s.f.s.StaffDirector [main] Security!
+2021-07-16 00:15:24,554 INFO c.s.f.s.StaffGuard [main] The security guard takes the person out of the room
+2021-07-16 00:15:24,555 INFO c.s.f.s.StaffDirector [main] The director and the representative of the government retired to the dark and secret room.
+2021-07-16 00:15:24,555 INFO c.s.f.s.StaffBase [main] Your salary,Karina, has been credited to the card. Amount: 0
+2021-07-16 00:15:24,555 INFO c.s.f.s.StaffBase [main] Your salary,Marina, has been credited to the card. Amount: 0
+2021-07-16 00:15:24,555 INFO c.s.f.s.StaffBooker [main]  Marinasay: Today is not a salary day. Wait for the 1st date of the month
+2021-07-16 00:15:24,555 INFO c.s.f.c.ClientsLegalP [main] Payment is successful! Company "OOO Company" balance after purchase: 8900
+2021-07-16 00:15:24,556 INFO c.s.f.f.FinInInsurance [main] Our company has 4 tariff packages. Their names: Base+, Base+1, Base+2, Family+
+2021-07-16 00:15:24,556 INFO c.s.f.f.FinInInvestmentCompany [main] Our companys director name: Petya
+2021-07-16 00:15:24,556 INFO c.s.f.f.FinInPopshop [main] We have:1002 EUR
+2021-07-16 00:15:24,556 INFO c.s.f.f.FinInStockExchange [main] We have:1000 In currency:EUR
+2021-07-16 00:15:24,556 INFO c.s.f.f.FinInInvestmentCompany [main] We have:1001 EUR
+2021-07-16 00:15:24,556 INFO c.s.f.u.BusinessLogic [main] ------------------------toString() examples------------------------
+2021-07-16 00:15:24,556 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:15:24,556 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:15:24,557 INFO c.s.f.u.BusinessLogic [main] bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 00:15:24,557 INFO c.s.f.u.BusinessLogic [main] bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 00:15:24,557 INFO c.s.f.u.BusinessLogic [main] bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 00:15:24,557 INFO c.s.f.u.BusinessLogic [main] bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 00:15:24,557 INFO c.s.f.u.BusinessLogic [main] bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 00:15:24,557 INFO c.s.f.u.BusinessLogic [main] bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 00:15:24,557 INFO c.s.f.u.BusinessLogic [main] bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 00:15:24,557 INFO c.s.f.u.BusinessLogic [main] Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 00:15:24,557 INFO c.s.f.u.BusinessLogic [main] Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 00:15:24,558 INFO c.s.f.u.BusinessLogic [main] Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 00:15:24,558 INFO c.s.f.u.BusinessLogic [main] Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 00:15:24,558 INFO c.s.f.u.BusinessLogic [main] Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 00:15:24,558 INFO c.s.f.u.BusinessLogic [main] Client name = "OOO Company", Client money = 8900, address = Kyiv, Khreshchatyk 4
+2021-07-16 00:15:24,558 INFO c.s.f.u.BusinessLogic [main] Client name = Government, Client money = 1000000100, Credit percent = 20, Foundation date 1900
+2021-07-16 00:15:24,558 INFO c.s.f.u.BusinessLogic [main] ------------------------equals examples------------------------
+2021-07-16 00:15:24,559 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank1 : true
+2021-07-16 00:15:24,559 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank2 : true
+2021-07-16 00:15:24,559 INFO c.s.f.u.BusinessLogic [main] bank1 equal guard1 : false
+2021-07-16 00:15:24,559 INFO c.s.f.u.BusinessLogic [main] ------------------------hashCode() examples------------------------
+2021-07-16 00:15:24,560 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 00:15:24,560 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 00:15:24,560 INFO c.s.f.u.BusinessLogic [main] 2077087810
+2021-07-16 00:15:24,560 INFO c.s.f.u.BusinessLogic [main] 1768493559
+2021-07-16 00:15:24,560 INFO c.s.f.u.BusinessLogic [main] -612408089
+2021-07-16 00:15:24,560 INFO c.s.f.u.BusinessLogic [main] -121847364
+2021-07-16 00:15:24,560 INFO c.s.f.u.BusinessLogic [main] -214693227
+2021-07-16 00:15:24,560 INFO c.s.f.u.BusinessLogic [main] 445539544
+2021-07-16 00:15:24,560 INFO c.s.f.u.BusinessLogic [main] -668956508
+2021-07-16 00:15:24,560 INFO c.s.f.u.BusinessLogic [main] -710501145
+2021-07-16 00:15:24,561 INFO c.s.f.u.BusinessLogic [main] 1303291265
+2021-07-16 00:15:24,561 INFO c.s.f.u.BusinessLogic [main] 1624148092
+2021-07-16 00:15:24,561 INFO c.s.f.u.BusinessLogic [main] 1524562666
+2021-07-16 00:15:24,561 INFO c.s.f.u.BusinessLogic [main] 202122028
+2021-07-16 00:15:24,561 INFO c.s.f.u.BusinessLogic [main] 1158428664
+2021-07-16 00:15:24,561 INFO c.s.f.u.BusinessLogic [main] 1121179440
+2021-07-16 00:15:24,561 INFO c.s.f.u.BusinessLogic [main] ------------------------Interfaces examples------------------------
+2021-07-16 00:15:24,561 INFO c.s.f.f.FinInBroker [main] Broker say sm.
+2021-07-16 00:15:24,561 INFO c.s.f.f.FinInDealer [main] Dealer say sm.
+2021-07-16 00:15:24,561 INFO c.s.f.f.FinInBroker [main] Broker say: I can give money
+2021-07-16 00:15:24,561 INFO c.s.f.f.FinInDealer [main] Dealer say : I can give money
+2021-07-16 00:15:24,561 INFO c.s.f.f.FinInStockExchange [main] StockExchange get smt item
+2021-07-16 00:15:24,562 INFO c.s.f.f.FinInPopshop [main] Pop shop get smt item
+2021-07-16 00:15:24,562 INFO c.s.f.c.ClientsGovernment [main] Rails rate for smt. %
+2021-07-16 00:15:24,562 INFO c.s.f.f.FInInBank [main] Rails rate for smt. %
+2021-07-16 00:15:24,562 INFO c.s.f.c.ClientsLegalP [main] Previous address = Kyiv, Khreshchatyk 4
+2021-07-16 00:15:24,562 INFO c.s.f.c.ClientsLegalP [main] . New address = new address of street
+2021-07-16 00:15:24,562 INFO c.s.f.u.BusinessLogic [main] ------------------------Generic examples------------------------
+2021-07-16 00:15:24,570 INFO c.s.f.u.BusinessLogic [main] ------------------------Collections and map examples------------------------
+2021-07-16 00:16:20,271 INFO c.s.f.u.BusinessLogic [main] ------------------------All created class to Loger------------------------
+2021-07-16 00:16:20,282 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:16:20,283 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:16:20,284 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 00:16:20,284 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 00:16:20,286 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 00:16:20,287 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 00:16:20,287 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 00:16:20,287 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 00:16:20,288 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 00:16:20,291 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 00:16:20,293 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 00:16:20,293 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 00:16:20,294 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 00:16:20,298 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 00:16:20,299 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = "OOO Company", Client money = 10000, address = Kyiv, Khreshchatyk 4
+2021-07-16 00:16:20,299 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Government, Client money = 1000000000, Credit percent = 20, Foundation date 1900
+2021-07-16 00:16:20,299 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 00:16:20,299 INFO c.s.f.c.ClientsNaturalP [main] Cashier ask "Kotobank" financial institute about bank possibility: 
+2021-07-16 00:16:20,301 INFO c.s.f.c.ClientsNaturalP [main] Money in the bank:14000, currency: UAH
+2021-07-16 00:16:20,304 INFO c.s.f.s.StaffCashier [main] Karina say: The bank can issue a loan in the amount 120 UAH for you
+2021-07-16 00:16:20,304 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 00:16:20,304 INFO c.s.f.u.BusinessLogic [main] ------------------------Other class interaction examples------------------------
+2021-07-16 00:16:20,305 INFO c.s.f.f.FinInPensionFund [main] Can't issue a loan. You need to be of retirement age
+2021-07-16 00:16:20,305 INFO c.s.f.f.FinInBase [main]  Kotobank can issue a loan
+2021-07-16 00:16:20,305 INFO c.s.f.s.StaffGuard [main] You need to go to the cashier. Go further into the room
+2021-07-16 00:16:20,305 INFO c.s.f.s.StaffDirector [main] Security!
+2021-07-16 00:16:20,305 INFO c.s.f.s.StaffGuard [main] The security guard takes the person out of the room
+2021-07-16 00:16:20,305 INFO c.s.f.s.StaffDirector [main] The director and the representative of the government retired to the dark and secret room.
+2021-07-16 00:16:20,305 INFO c.s.f.s.StaffBase [main] Your salary,Karina, has been credited to the card. Amount: 0
+2021-07-16 00:16:20,306 INFO c.s.f.s.StaffBase [main] Your salary,Marina, has been credited to the card. Amount: 0
+2021-07-16 00:16:20,306 INFO c.s.f.s.StaffBooker [main]  Marinasay: Today is not a salary day. Wait for the 1st date of the month
+2021-07-16 00:16:20,306 INFO c.s.f.c.ClientsLegalP [main] Payment is successful! Company "OOO Company" balance after purchase: 8900
+2021-07-16 00:16:20,306 INFO c.s.f.f.FinInInsurance [main] Our company has 4 tariff packages. Their names: Base+, Base+1, Base+2, Family+
+2021-07-16 00:16:20,306 INFO c.s.f.f.FinInInvestmentCompany [main] Our companys director name: Petya
+2021-07-16 00:16:20,306 INFO c.s.f.f.FinInPopshop [main] We have:1002 EUR
+2021-07-16 00:16:20,307 INFO c.s.f.f.FinInStockExchange [main] We have:1000 In currency:EUR
+2021-07-16 00:16:20,307 INFO c.s.f.f.FinInInvestmentCompany [main] We have:1001 EUR
+2021-07-16 00:16:20,307 INFO c.s.f.u.BusinessLogic [main] ------------------------toString() examples------------------------
+2021-07-16 00:16:20,307 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:16:20,307 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:16:20,307 INFO c.s.f.u.BusinessLogic [main] bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 00:16:20,307 INFO c.s.f.u.BusinessLogic [main] bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 00:16:20,307 INFO c.s.f.u.BusinessLogic [main] bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 00:16:20,308 INFO c.s.f.u.BusinessLogic [main] bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 00:16:20,308 INFO c.s.f.u.BusinessLogic [main] bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 00:16:20,308 INFO c.s.f.u.BusinessLogic [main] bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 00:16:20,308 INFO c.s.f.u.BusinessLogic [main] bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 00:16:20,308 INFO c.s.f.u.BusinessLogic [main] Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 00:16:20,308 INFO c.s.f.u.BusinessLogic [main] Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 00:16:20,308 INFO c.s.f.u.BusinessLogic [main] Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 00:16:20,308 INFO c.s.f.u.BusinessLogic [main] Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 00:16:20,308 INFO c.s.f.u.BusinessLogic [main] Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 00:16:20,308 INFO c.s.f.u.BusinessLogic [main] Client name = "OOO Company", Client money = 8900, address = Kyiv, Khreshchatyk 4
+2021-07-16 00:16:20,308 INFO c.s.f.u.BusinessLogic [main] Client name = Government, Client money = 1000000100, Credit percent = 20, Foundation date 1900
+2021-07-16 00:16:20,309 INFO c.s.f.u.BusinessLogic [main] ------------------------equals examples------------------------
+2021-07-16 00:16:20,309 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank1 : true
+2021-07-16 00:16:20,309 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank2 : true
+2021-07-16 00:16:20,309 INFO c.s.f.u.BusinessLogic [main] bank1 equal guard1 : false
+2021-07-16 00:16:20,309 INFO c.s.f.u.BusinessLogic [main] ------------------------hashCode() examples------------------------
+2021-07-16 00:16:20,311 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 00:16:20,312 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 00:16:20,312 INFO c.s.f.u.BusinessLogic [main] 2077087810
+2021-07-16 00:16:20,312 INFO c.s.f.u.BusinessLogic [main] 1768493559
+2021-07-16 00:16:20,312 INFO c.s.f.u.BusinessLogic [main] -612408089
+2021-07-16 00:16:20,312 INFO c.s.f.u.BusinessLogic [main] -121847364
+2021-07-16 00:16:20,312 INFO c.s.f.u.BusinessLogic [main] -214693227
+2021-07-16 00:16:20,312 INFO c.s.f.u.BusinessLogic [main] 445539544
+2021-07-16 00:16:20,312 INFO c.s.f.u.BusinessLogic [main] -668956508
+2021-07-16 00:16:20,312 INFO c.s.f.u.BusinessLogic [main] -710501145
+2021-07-16 00:16:20,312 INFO c.s.f.u.BusinessLogic [main] 1303291265
+2021-07-16 00:16:20,313 INFO c.s.f.u.BusinessLogic [main] 1624148092
+2021-07-16 00:16:20,313 INFO c.s.f.u.BusinessLogic [main] 1524562666
+2021-07-16 00:16:20,313 INFO c.s.f.u.BusinessLogic [main] 202122028
+2021-07-16 00:16:20,314 INFO c.s.f.u.BusinessLogic [main] 1158428664
+2021-07-16 00:16:20,314 INFO c.s.f.u.BusinessLogic [main] 1121179440
+2021-07-16 00:16:20,314 INFO c.s.f.u.BusinessLogic [main] ------------------------Interfaces examples------------------------
+2021-07-16 00:16:20,314 INFO c.s.f.f.FinInBroker [main] Broker say sm.
+2021-07-16 00:16:20,314 INFO c.s.f.f.FinInDealer [main] Dealer say sm.
+2021-07-16 00:16:20,314 INFO c.s.f.f.FinInBroker [main] Broker say: I can give money
+2021-07-16 00:16:20,314 INFO c.s.f.f.FinInDealer [main] Dealer say : I can give money
+2021-07-16 00:16:20,314 INFO c.s.f.f.FinInStockExchange [main] StockExchange get smt item
+2021-07-16 00:16:20,314 INFO c.s.f.f.FinInPopshop [main] Pop shop get smt item
+2021-07-16 00:16:20,314 INFO c.s.f.c.ClientsGovernment [main] Rails rate for smt. %
+2021-07-16 00:16:20,314 INFO c.s.f.f.FInInBank [main] Rails rate for smt. %
+2021-07-16 00:16:20,315 INFO c.s.f.c.ClientsLegalP [main] Previous address = Kyiv, Khreshchatyk 4
+2021-07-16 00:16:20,315 INFO c.s.f.c.ClientsLegalP [main] . New address = new address of street
+2021-07-16 00:16:20,315 INFO c.s.f.u.BusinessLogic [main] ------------------------Generic examples------------------------
+2021-07-16 00:16:20,317 INFO c.s.f.u.BusinessLogic [main] ------------------------Collections and map examples------------------------
+2021-07-16 00:16:47,915 INFO c.s.f.u.BusinessLogic [main] ------------------------All created class to Loger------------------------
+2021-07-16 00:16:47,927 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:16:47,927 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:16:47,928 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 00:16:47,928 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 00:16:47,929 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 00:16:47,929 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 00:16:47,930 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 00:16:47,930 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 00:16:47,931 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 00:16:47,934 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 00:16:47,934 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 00:16:47,935 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 00:16:47,935 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 00:16:47,939 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 00:16:47,939 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = "OOO Company", Client money = 10000, address = Kyiv, Khreshchatyk 4
+2021-07-16 00:16:47,940 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Government, Client money = 1000000000, Credit percent = 20, Foundation date 1900
+2021-07-16 00:16:47,940 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 00:16:47,940 INFO c.s.f.c.ClientsNaturalP [main] Cashier ask "Kotobank" financial institute about bank possibility: 
+2021-07-16 00:16:47,942 INFO c.s.f.c.ClientsNaturalP [main] Money in the bank:14000, currency: UAH
+2021-07-16 00:16:47,945 INFO c.s.f.s.StaffCashier [main] Karina say: The bank can issue a loan in the amount 120 UAH for you
+2021-07-16 00:16:47,945 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 00:16:47,945 INFO c.s.f.u.BusinessLogic [main] ------------------------Other class interaction examples------------------------
+2021-07-16 00:16:47,945 INFO c.s.f.f.FinInPensionFund [main] Can't issue a loan. You need to be of retirement age
+2021-07-16 00:16:47,945 INFO c.s.f.f.FinInBase [main]  Kotobank can issue a loan
+2021-07-16 00:16:47,945 INFO c.s.f.s.StaffGuard [main] You need to go to the cashier. Go further into the room
+2021-07-16 00:16:47,946 INFO c.s.f.s.StaffDirector [main] Security!
+2021-07-16 00:16:47,946 INFO c.s.f.s.StaffGuard [main] The security guard takes the person out of the room
+2021-07-16 00:16:47,946 INFO c.s.f.s.StaffDirector [main] The director and the representative of the government retired to the dark and secret room.
+2021-07-16 00:16:47,946 INFO c.s.f.s.StaffBase [main] Your salary,Karina, has been credited to the card. Amount: 0
+2021-07-16 00:16:47,946 INFO c.s.f.s.StaffBase [main] Your salary,Marina, has been credited to the card. Amount: 0
+2021-07-16 00:16:47,946 INFO c.s.f.s.StaffBooker [main]  Marinasay: Today is not a salary day. Wait for the 1st date of the month
+2021-07-16 00:16:47,946 INFO c.s.f.c.ClientsLegalP [main] Payment is successful! Company "OOO Company" balance after purchase: 8900
+2021-07-16 00:16:47,947 INFO c.s.f.f.FinInInsurance [main] Our company has 4 tariff packages. Their names: Base+, Base+1, Base+2, Family+
+2021-07-16 00:16:47,947 INFO c.s.f.f.FinInInvestmentCompany [main] Our companys director name: Petya
+2021-07-16 00:16:47,947 INFO c.s.f.f.FinInPopshop [main] We have:1002 EUR
+2021-07-16 00:16:47,947 INFO c.s.f.f.FinInStockExchange [main] We have:1000 In currency:EUR
+2021-07-16 00:16:47,947 INFO c.s.f.f.FinInInvestmentCompany [main] We have:1001 EUR
+2021-07-16 00:16:47,947 INFO c.s.f.u.BusinessLogic [main] ------------------------toString() examples------------------------
+2021-07-16 00:16:47,947 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:16:47,948 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:16:47,949 INFO c.s.f.u.BusinessLogic [main] bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 00:16:47,949 INFO c.s.f.u.BusinessLogic [main] bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 00:16:47,949 INFO c.s.f.u.BusinessLogic [main] bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 00:16:47,949 INFO c.s.f.u.BusinessLogic [main] bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 00:16:47,949 INFO c.s.f.u.BusinessLogic [main] bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 00:16:47,950 INFO c.s.f.u.BusinessLogic [main] bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 00:16:47,950 INFO c.s.f.u.BusinessLogic [main] bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 00:16:47,950 INFO c.s.f.u.BusinessLogic [main] Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 00:16:47,950 INFO c.s.f.u.BusinessLogic [main] Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 00:16:47,950 INFO c.s.f.u.BusinessLogic [main] Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 00:16:47,950 INFO c.s.f.u.BusinessLogic [main] Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 00:16:47,950 INFO c.s.f.u.BusinessLogic [main] Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 00:16:47,950 INFO c.s.f.u.BusinessLogic [main] Client name = "OOO Company", Client money = 8900, address = Kyiv, Khreshchatyk 4
+2021-07-16 00:16:47,951 INFO c.s.f.u.BusinessLogic [main] Client name = Government, Client money = 1000000100, Credit percent = 20, Foundation date 1900
+2021-07-16 00:16:47,951 INFO c.s.f.u.BusinessLogic [main] ------------------------equals examples------------------------
+2021-07-16 00:16:47,951 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank1 : true
+2021-07-16 00:16:47,951 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank2 : true
+2021-07-16 00:16:47,952 INFO c.s.f.u.BusinessLogic [main] bank1 equal guard1 : false
+2021-07-16 00:16:47,952 INFO c.s.f.u.BusinessLogic [main] ------------------------hashCode() examples------------------------
+2021-07-16 00:16:47,953 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 00:16:47,953 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 00:16:47,953 INFO c.s.f.u.BusinessLogic [main] 2077087810
+2021-07-16 00:16:47,953 INFO c.s.f.u.BusinessLogic [main] 1768493559
+2021-07-16 00:16:47,953 INFO c.s.f.u.BusinessLogic [main] -612408089
+2021-07-16 00:16:47,953 INFO c.s.f.u.BusinessLogic [main] -121847364
+2021-07-16 00:16:47,953 INFO c.s.f.u.BusinessLogic [main] -214693227
+2021-07-16 00:16:47,953 INFO c.s.f.u.BusinessLogic [main] 445539544
+2021-07-16 00:16:47,953 INFO c.s.f.u.BusinessLogic [main] -668956508
+2021-07-16 00:16:47,954 INFO c.s.f.u.BusinessLogic [main] -710501145
+2021-07-16 00:16:47,954 INFO c.s.f.u.BusinessLogic [main] 1303291265
+2021-07-16 00:16:47,954 INFO c.s.f.u.BusinessLogic [main] 1624148092
+2021-07-16 00:16:47,954 INFO c.s.f.u.BusinessLogic [main] 1524562666
+2021-07-16 00:16:47,954 INFO c.s.f.u.BusinessLogic [main] 202122028
+2021-07-16 00:16:47,954 INFO c.s.f.u.BusinessLogic [main] 1158428664
+2021-07-16 00:16:47,954 INFO c.s.f.u.BusinessLogic [main] 1121179440
+2021-07-16 00:16:47,954 INFO c.s.f.u.BusinessLogic [main] ------------------------Interfaces examples------------------------
+2021-07-16 00:16:47,954 INFO c.s.f.f.FinInBroker [main] Broker say sm.
+2021-07-16 00:16:47,954 INFO c.s.f.f.FinInDealer [main] Dealer say sm.
+2021-07-16 00:16:47,954 INFO c.s.f.f.FinInBroker [main] Broker say: I can give money
+2021-07-16 00:16:47,954 INFO c.s.f.f.FinInDealer [main] Dealer say : I can give money
+2021-07-16 00:16:47,954 INFO c.s.f.f.FinInStockExchange [main] StockExchange get smt item
+2021-07-16 00:16:47,954 INFO c.s.f.f.FinInPopshop [main] Pop shop get smt item
+2021-07-16 00:16:47,955 INFO c.s.f.c.ClientsGovernment [main] Rails rate for smt. %
+2021-07-16 00:16:47,955 INFO c.s.f.f.FInInBank [main] Rails rate for smt. %
+2021-07-16 00:16:47,955 INFO c.s.f.c.ClientsLegalP [main] Previous address = Kyiv, Khreshchatyk 4
+2021-07-16 00:16:47,955 INFO c.s.f.c.ClientsLegalP [main] . New address = new address of street
+2021-07-16 00:16:47,955 INFO c.s.f.u.BusinessLogic [main] ------------------------Generic examples------------------------
+2021-07-16 00:16:47,956 INFO c.s.f.u.BusinessLogic [main] ------------------------Collections and map examples------------------------
+2021-07-16 00:35:00,162 INFO c.s.f.u.BusinessLogic [main] ------------------------All created class to Loger------------------------
+2021-07-16 00:35:00,171 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:35:00,171 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:35:00,171 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 00:35:00,171 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 00:35:00,172 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 00:35:00,172 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 00:35:00,173 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 00:35:00,173 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 00:35:00,173 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 00:35:00,177 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 00:35:00,177 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 00:35:00,178 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 00:35:00,178 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 00:35:00,180 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 00:35:00,184 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = "OOO Company", Client money = 10000, address = Kyiv, Khreshchatyk 4
+2021-07-16 00:35:00,184 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Government, Client money = 1000000000, Credit percent = 20, Foundation date 1900
+2021-07-16 00:35:00,184 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 00:35:00,185 INFO c.s.f.c.ClientsNaturalP [main] Cashier ask "Kotobank" financial institute about bank possibility: 
+2021-07-16 00:35:00,187 INFO c.s.f.c.ClientsNaturalP [main] Money in the bank:14000, currency: UAH
+2021-07-16 00:35:00,189 INFO c.s.f.s.StaffCashier [main] Karina say: The bank can issue a loan in the amount 120 UAH for you
+2021-07-16 00:35:00,190 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 00:35:00,190 INFO c.s.f.u.BusinessLogic [main] ------------------------Other class interaction examples------------------------
+2021-07-16 00:35:00,190 INFO c.s.f.f.FinInPensionFund [main] Can't issue a loan. You need to be of retirement age
+2021-07-16 00:35:00,190 INFO c.s.f.f.FinInBase [main]  Kotobank can issue a loan
+2021-07-16 00:35:00,190 INFO c.s.f.s.StaffGuard [main] You need to go to the cashier. Go further into the room
+2021-07-16 00:35:00,190 INFO c.s.f.s.StaffDirector [main] Security!
+2021-07-16 00:35:00,190 INFO c.s.f.s.StaffGuard [main] The security guard takes the person out of the room
+2021-07-16 00:35:00,191 INFO c.s.f.s.StaffDirector [main] The director and the representative of the government retired to the dark and secret room.
+2021-07-16 00:35:00,191 INFO c.s.f.s.StaffBase [main] Your salary,Karina, has been credited to the card. Amount: 0
+2021-07-16 00:35:00,191 INFO c.s.f.s.StaffBase [main] Your salary,Marina, has been credited to the card. Amount: 0
+2021-07-16 00:35:00,191 INFO c.s.f.s.StaffBooker [main]  Marinasay: Today is not a salary day. Wait for the 1st date of the month
+2021-07-16 00:35:00,191 INFO c.s.f.c.ClientsLegalP [main] Payment is successful! Company "OOO Company" balance after purchase: 8900
+2021-07-16 00:35:00,191 INFO c.s.f.f.FinInInsurance [main] Our company has 4 tariff packages. Their names: Base+, Base+1, Base+2, Family+
+2021-07-16 00:35:00,192 INFO c.s.f.f.FinInInvestmentCompany [main] Our companys director name: Petya
+2021-07-16 00:35:00,192 INFO c.s.f.f.FinInPopshop [main] We have:1002 EUR
+2021-07-16 00:35:00,192 INFO c.s.f.f.FinInStockExchange [main] We have:1000 In currency:EUR
+2021-07-16 00:35:00,192 INFO c.s.f.f.FinInInvestmentCompany [main] We have:1001 EUR
+2021-07-16 00:35:00,192 INFO c.s.f.u.BusinessLogic [main] ------------------------toString() examples------------------------
+2021-07-16 00:35:00,192 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:35:00,193 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:35:00,193 INFO c.s.f.u.BusinessLogic [main] bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 00:35:00,193 INFO c.s.f.u.BusinessLogic [main] bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 00:35:00,193 INFO c.s.f.u.BusinessLogic [main] bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 00:35:00,193 INFO c.s.f.u.BusinessLogic [main] bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 00:35:00,193 INFO c.s.f.u.BusinessLogic [main] bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 00:35:00,193 INFO c.s.f.u.BusinessLogic [main] bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 00:35:00,193 INFO c.s.f.u.BusinessLogic [main] bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 00:35:00,193 INFO c.s.f.u.BusinessLogic [main] Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 00:35:00,194 INFO c.s.f.u.BusinessLogic [main] Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 00:35:00,194 INFO c.s.f.u.BusinessLogic [main] Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 00:35:00,194 INFO c.s.f.u.BusinessLogic [main] Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 00:35:00,194 INFO c.s.f.u.BusinessLogic [main] Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 00:35:00,195 INFO c.s.f.u.BusinessLogic [main] Client name = "OOO Company", Client money = 8900, address = Kyiv, Khreshchatyk 4
+2021-07-16 00:35:00,195 INFO c.s.f.u.BusinessLogic [main] Client name = Government, Client money = 1000000100, Credit percent = 20, Foundation date 1900
+2021-07-16 00:35:00,195 INFO c.s.f.u.BusinessLogic [main] ------------------------equals examples------------------------
+2021-07-16 00:35:00,195 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank1 : true
+2021-07-16 00:35:00,195 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank2 : true
+2021-07-16 00:35:00,195 INFO c.s.f.u.BusinessLogic [main] bank1 equal guard1 : false
+2021-07-16 00:35:00,195 INFO c.s.f.u.BusinessLogic [main] ------------------------hashCode() examples------------------------
+2021-07-16 00:35:00,196 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 00:35:00,196 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 00:35:00,196 INFO c.s.f.u.BusinessLogic [main] 2077087810
+2021-07-16 00:35:00,196 INFO c.s.f.u.BusinessLogic [main] 1768493559
+2021-07-16 00:35:00,197 INFO c.s.f.u.BusinessLogic [main] -612408089
+2021-07-16 00:35:00,197 INFO c.s.f.u.BusinessLogic [main] -121847364
+2021-07-16 00:35:00,197 INFO c.s.f.u.BusinessLogic [main] -214693227
+2021-07-16 00:35:00,197 INFO c.s.f.u.BusinessLogic [main] 445539544
+2021-07-16 00:35:00,197 INFO c.s.f.u.BusinessLogic [main] -668956508
+2021-07-16 00:35:00,197 INFO c.s.f.u.BusinessLogic [main] -710501145
+2021-07-16 00:35:00,197 INFO c.s.f.u.BusinessLogic [main] 1303291265
+2021-07-16 00:35:00,197 INFO c.s.f.u.BusinessLogic [main] 1624148092
+2021-07-16 00:35:00,197 INFO c.s.f.u.BusinessLogic [main] 1524562666
+2021-07-16 00:35:00,197 INFO c.s.f.u.BusinessLogic [main] 202122028
+2021-07-16 00:35:00,198 INFO c.s.f.u.BusinessLogic [main] 1158428664
+2021-07-16 00:35:00,198 INFO c.s.f.u.BusinessLogic [main] 1121179440
+2021-07-16 00:35:00,198 INFO c.s.f.u.BusinessLogic [main] ------------------------Interfaces examples------------------------
+2021-07-16 00:35:00,198 INFO c.s.f.f.FinInBroker [main] Broker say sm.
+2021-07-16 00:35:00,198 INFO c.s.f.f.FinInDealer [main] Dealer say sm.
+2021-07-16 00:35:00,198 INFO c.s.f.f.FinInBroker [main] Broker say: I can give money
+2021-07-16 00:35:00,198 INFO c.s.f.f.FinInDealer [main] Dealer say : I can give money
+2021-07-16 00:35:00,198 INFO c.s.f.f.FinInStockExchange [main] StockExchange get smt item
+2021-07-16 00:35:00,198 INFO c.s.f.f.FinInPopshop [main] Pop shop get smt item
+2021-07-16 00:35:00,198 INFO c.s.f.c.ClientsGovernment [main] Rails rate for smt. %
+2021-07-16 00:35:00,198 INFO c.s.f.f.FInInBank [main] Rails rate for smt. %
+2021-07-16 00:35:00,198 INFO c.s.f.c.ClientsLegalP [main] Previous address = Kyiv, Khreshchatyk 4
+2021-07-16 00:35:00,199 INFO c.s.f.c.ClientsLegalP [main] . New address = new address of street
+2021-07-16 00:35:00,199 INFO c.s.f.u.BusinessLogic [main] ------------------------Generic examples------------------------
+2021-07-16 00:35:00,205 INFO c.s.f.u.BusinessLogic [main] ------------------------Collections and map examples------------------------
+2021-07-16 00:52:37,112 INFO c.s.f.u.BusinessLogic [main] ------------------------All created class to Loger------------------------
+2021-07-16 00:52:37,123 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:52:37,123 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:52:37,123 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 00:52:37,124 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 00:52:37,124 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 00:52:37,124 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 00:52:37,125 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 00:52:37,125 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 00:52:37,125 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 00:52:37,128 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 00:52:37,129 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 00:52:37,129 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 00:52:37,129 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 00:52:37,133 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 00:52:37,133 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = "OOO Company", Client money = 10000, address = Kyiv, Khreshchatyk 4
+2021-07-16 00:52:37,134 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Government, Client money = 1000000000, Credit percent = 20, Foundation date 1900
+2021-07-16 00:52:37,134 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 00:52:37,134 INFO c.s.f.c.ClientsNaturalP [main] Cashier ask "Kotobank" financial institute about bank possibility: 
+2021-07-16 00:52:37,136 INFO c.s.f.c.ClientsNaturalP [main] Money in the bank:14000, currency: UAH
+2021-07-16 00:52:37,138 INFO c.s.f.s.StaffCashier [main] Karina say: The bank can issue a loan in the amount 120 UAH for you
+2021-07-16 00:52:37,138 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 00:52:37,138 INFO c.s.f.u.BusinessLogic [main] ------------------------Other class interaction examples------------------------
+2021-07-16 00:52:37,138 INFO c.s.f.f.FinInPensionFund [main] Can't issue a loan. You need to be of retirement age
+2021-07-16 00:52:37,139 INFO c.s.f.f.FinInBase [main]  Kotobank can issue a loan
+2021-07-16 00:52:37,139 INFO c.s.f.s.StaffGuard [main] You need to go to the cashier. Go further into the room
+2021-07-16 00:52:37,139 INFO c.s.f.s.StaffDirector [main] Security!
+2021-07-16 00:52:37,139 INFO c.s.f.s.StaffGuard [main] The security guard takes the person out of the room
+2021-07-16 00:52:37,139 INFO c.s.f.s.StaffDirector [main] The director and the representative of the government retired to the dark and secret room.
+2021-07-16 00:52:37,139 INFO c.s.f.s.StaffBase [main] Your salary,Karina, has been credited to the card. Amount: 0
+2021-07-16 00:52:37,139 INFO c.s.f.s.StaffBase [main] Your salary,Marina, has been credited to the card. Amount: 0
+2021-07-16 00:52:37,139 INFO c.s.f.s.StaffBooker [main]  Marinasay: Today is not a salary day. Wait for the 1st date of the month
+2021-07-16 00:52:37,140 INFO c.s.f.c.ClientsLegalP [main] Payment is successful! Company "OOO Company" balance after purchase: 8900
+2021-07-16 00:52:37,140 INFO c.s.f.f.FinInInsurance [main] Our company has 4 tariff packages. Their names: Base+, Base+1, Base+2, Family+
+2021-07-16 00:52:37,140 INFO c.s.f.f.FinInInvestmentCompany [main] Our companys director name: Petya
+2021-07-16 00:52:37,140 INFO c.s.f.f.FinInPopshop [main] We have:1002 EUR
+2021-07-16 00:52:37,140 INFO c.s.f.f.FinInStockExchange [main] We have:1000 In currency:EUR
+2021-07-16 00:52:37,141 INFO c.s.f.f.FinInInvestmentCompany [main] We have:1001 EUR
+2021-07-16 00:52:37,141 INFO c.s.f.u.BusinessLogic [main] ------------------------toString() examples------------------------
+2021-07-16 00:52:37,141 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:52:37,141 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:52:37,141 INFO c.s.f.u.BusinessLogic [main] bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 00:52:37,141 INFO c.s.f.u.BusinessLogic [main] bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 00:52:37,141 INFO c.s.f.u.BusinessLogic [main] bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 00:52:37,142 INFO c.s.f.u.BusinessLogic [main] bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 00:52:37,142 INFO c.s.f.u.BusinessLogic [main] bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 00:52:37,142 INFO c.s.f.u.BusinessLogic [main] bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 00:52:37,142 INFO c.s.f.u.BusinessLogic [main] bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 00:52:37,142 INFO c.s.f.u.BusinessLogic [main] Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 00:52:37,142 INFO c.s.f.u.BusinessLogic [main] Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 00:52:37,142 INFO c.s.f.u.BusinessLogic [main] Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 00:52:37,142 INFO c.s.f.u.BusinessLogic [main] Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 00:52:37,143 INFO c.s.f.u.BusinessLogic [main] Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 00:52:37,143 INFO c.s.f.u.BusinessLogic [main] Client name = "OOO Company", Client money = 8900, address = Kyiv, Khreshchatyk 4
+2021-07-16 00:52:37,143 INFO c.s.f.u.BusinessLogic [main] Client name = Government, Client money = 1000000100, Credit percent = 20, Foundation date 1900
+2021-07-16 00:52:37,143 INFO c.s.f.u.BusinessLogic [main] ------------------------equals examples------------------------
+2021-07-16 00:52:37,143 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank1 : true
+2021-07-16 00:52:37,143 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank2 : true
+2021-07-16 00:52:37,143 INFO c.s.f.u.BusinessLogic [main] bank1 equal guard1 : false
+2021-07-16 00:52:37,143 INFO c.s.f.u.BusinessLogic [main] ------------------------hashCode() examples------------------------
+2021-07-16 00:52:37,144 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 00:52:37,144 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 00:52:37,144 INFO c.s.f.u.BusinessLogic [main] 2077087810
+2021-07-16 00:52:37,144 INFO c.s.f.u.BusinessLogic [main] 1768493559
+2021-07-16 00:52:37,145 INFO c.s.f.u.BusinessLogic [main] -612408089
+2021-07-16 00:52:37,145 INFO c.s.f.u.BusinessLogic [main] -121847364
+2021-07-16 00:52:37,145 INFO c.s.f.u.BusinessLogic [main] -214693227
+2021-07-16 00:52:37,145 INFO c.s.f.u.BusinessLogic [main] 445539544
+2021-07-16 00:52:37,145 INFO c.s.f.u.BusinessLogic [main] -668956508
+2021-07-16 00:52:37,145 INFO c.s.f.u.BusinessLogic [main] -710501145
+2021-07-16 00:52:37,145 INFO c.s.f.u.BusinessLogic [main] 1303291265
+2021-07-16 00:52:37,145 INFO c.s.f.u.BusinessLogic [main] 1624148092
+2021-07-16 00:52:37,145 INFO c.s.f.u.BusinessLogic [main] 1524562666
+2021-07-16 00:52:37,145 INFO c.s.f.u.BusinessLogic [main] 202122028
+2021-07-16 00:52:37,146 INFO c.s.f.u.BusinessLogic [main] 1158428664
+2021-07-16 00:52:37,146 INFO c.s.f.u.BusinessLogic [main] 1121179440
+2021-07-16 00:52:37,146 INFO c.s.f.u.BusinessLogic [main] ------------------------Interfaces examples------------------------
+2021-07-16 00:52:37,146 INFO c.s.f.f.FinInBroker [main] Broker say sm.
+2021-07-16 00:52:37,146 INFO c.s.f.f.FinInDealer [main] Dealer say sm.
+2021-07-16 00:52:37,146 INFO c.s.f.f.FinInBroker [main] Broker say: I can give money
+2021-07-16 00:52:37,146 INFO c.s.f.f.FinInDealer [main] Dealer say : I can give money
+2021-07-16 00:52:37,146 INFO c.s.f.f.FinInStockExchange [main] StockExchange get smt item
+2021-07-16 00:52:37,146 INFO c.s.f.f.FinInPopshop [main] Pop shop get smt item
+2021-07-16 00:52:37,146 INFO c.s.f.c.ClientsGovernment [main] Rails rate for smt. %
+2021-07-16 00:52:37,147 INFO c.s.f.f.FInInBank [main] Rails rate for smt. %
+2021-07-16 00:52:37,147 INFO c.s.f.c.ClientsLegalP [main] Previous address = Kyiv, Khreshchatyk 4
+2021-07-16 00:52:37,147 INFO c.s.f.c.ClientsLegalP [main] . New address = new address of street
+2021-07-16 00:52:37,147 INFO c.s.f.u.BusinessLogic [main] ------------------------Generic examples------------------------
+2021-07-16 00:52:37,148 INFO c.s.f.u.BusinessLogic [main] ------------------------Collections and map examples------------------------
+2021-07-16 00:59:40,799 INFO c.s.f.u.BusinessLogic [main] ------------------------All created class to Loger------------------------
+2021-07-16 00:59:40,808 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:59:40,808 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:59:40,808 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 00:59:40,809 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 00:59:40,809 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 00:59:40,809 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 00:59:40,810 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 00:59:40,810 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 00:59:40,810 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 00:59:40,814 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 00:59:40,814 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 00:59:40,815 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 00:59:40,815 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 00:59:40,818 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 00:59:40,819 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = "OOO Company", Client money = 10000, address = Kyiv, Khreshchatyk 4
+2021-07-16 00:59:40,819 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Government, Client money = 1000000000, Credit percent = 20, Foundation date 1900
+2021-07-16 00:59:40,819 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 00:59:40,819 INFO c.s.f.c.ClientsNaturalP [main] Cashier ask "Kotobank" financial institute about bank possibility: 
+2021-07-16 00:59:40,821 INFO c.s.f.c.ClientsNaturalP [main] Money in the bank:14000, currency: UAH
+2021-07-16 00:59:40,823 INFO c.s.f.s.StaffCashier [main] Karina say: The bank can issue a loan in the amount 120 UAH for you
+2021-07-16 00:59:40,824 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 00:59:40,824 INFO c.s.f.u.BusinessLogic [main] ------------------------Other class interaction examples------------------------
+2021-07-16 00:59:40,824 INFO c.s.f.f.FinInPensionFund [main] Can't issue a loan. You need to be of retirement age
+2021-07-16 00:59:40,824 INFO c.s.f.f.FinInBase [main]  Kotobank can issue a loan
+2021-07-16 00:59:40,824 INFO c.s.f.s.StaffGuard [main] You need to go to the cashier. Go further into the room
+2021-07-16 00:59:40,825 INFO c.s.f.s.StaffDirector [main] Security!
+2021-07-16 00:59:40,825 INFO c.s.f.s.StaffGuard [main] The security guard takes the person out of the room
+2021-07-16 00:59:40,825 INFO c.s.f.s.StaffDirector [main] The director and the representative of the government retired to the dark and secret room.
+2021-07-16 00:59:40,825 INFO c.s.f.s.StaffBase [main] Your salary,Karina, has been credited to the card. Amount: 0
+2021-07-16 00:59:40,825 INFO c.s.f.s.StaffBase [main] Your salary,Marina, has been credited to the card. Amount: 0
+2021-07-16 00:59:40,825 INFO c.s.f.s.StaffBooker [main]  Marinasay: Today is not a salary day. Wait for the 1st date of the month
+2021-07-16 00:59:40,826 INFO c.s.f.c.ClientsLegalP [main] Payment is successful! Company "OOO Company" balance after purchase: 8900
+2021-07-16 00:59:40,826 INFO c.s.f.f.FinInInsurance [main] Our company has 4 tariff packages. Their names: Base+, Base+1, Base+2, Family+
+2021-07-16 00:59:40,826 INFO c.s.f.f.FinInInvestmentCompany [main] Our companys director name: Petya
+2021-07-16 00:59:40,826 INFO c.s.f.f.FinInPopshop [main] We have:1002 EUR
+2021-07-16 00:59:40,826 INFO c.s.f.f.FinInStockExchange [main] We have:1000 In currency:EUR
+2021-07-16 00:59:40,827 INFO c.s.f.f.FinInInvestmentCompany [main] We have:1001 EUR
+2021-07-16 00:59:40,827 INFO c.s.f.u.BusinessLogic [main] ------------------------toString() examples------------------------
+2021-07-16 00:59:40,827 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:59:40,827 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 00:59:40,827 INFO c.s.f.u.BusinessLogic [main] bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 00:59:40,827 INFO c.s.f.u.BusinessLogic [main] bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 00:59:40,827 INFO c.s.f.u.BusinessLogic [main] bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 00:59:40,827 INFO c.s.f.u.BusinessLogic [main] bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 00:59:40,828 INFO c.s.f.u.BusinessLogic [main] bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 00:59:40,828 INFO c.s.f.u.BusinessLogic [main] bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 00:59:40,828 INFO c.s.f.u.BusinessLogic [main] bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 00:59:40,828 INFO c.s.f.u.BusinessLogic [main] Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 00:59:40,828 INFO c.s.f.u.BusinessLogic [main] Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 00:59:40,828 INFO c.s.f.u.BusinessLogic [main] Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 00:59:40,828 INFO c.s.f.u.BusinessLogic [main] Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 00:59:40,828 INFO c.s.f.u.BusinessLogic [main] Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 00:59:40,828 INFO c.s.f.u.BusinessLogic [main] Client name = "OOO Company", Client money = 8900, address = Kyiv, Khreshchatyk 4
+2021-07-16 00:59:40,828 INFO c.s.f.u.BusinessLogic [main] Client name = Government, Client money = 1000000100, Credit percent = 20, Foundation date 1900
+2021-07-16 00:59:40,829 INFO c.s.f.u.BusinessLogic [main] ------------------------equals examples------------------------
+2021-07-16 00:59:40,829 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank1 : true
+2021-07-16 00:59:40,829 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank2 : true
+2021-07-16 00:59:40,829 INFO c.s.f.u.BusinessLogic [main] bank1 equal guard1 : false
+2021-07-16 00:59:40,829 INFO c.s.f.u.BusinessLogic [main] ------------------------hashCode() examples------------------------
+2021-07-16 00:59:40,830 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 00:59:40,830 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 00:59:40,830 INFO c.s.f.u.BusinessLogic [main] 2077087810
+2021-07-16 00:59:40,830 INFO c.s.f.u.BusinessLogic [main] 1768493559
+2021-07-16 00:59:40,830 INFO c.s.f.u.BusinessLogic [main] -612408089
+2021-07-16 00:59:40,830 INFO c.s.f.u.BusinessLogic [main] -121847364
+2021-07-16 00:59:40,830 INFO c.s.f.u.BusinessLogic [main] -214693227
+2021-07-16 00:59:40,831 INFO c.s.f.u.BusinessLogic [main] 445539544
+2021-07-16 00:59:40,831 INFO c.s.f.u.BusinessLogic [main] -668956508
+2021-07-16 00:59:40,831 INFO c.s.f.u.BusinessLogic [main] -710501145
+2021-07-16 00:59:40,831 INFO c.s.f.u.BusinessLogic [main] 1303291265
+2021-07-16 00:59:40,831 INFO c.s.f.u.BusinessLogic [main] 1624148092
+2021-07-16 00:59:40,831 INFO c.s.f.u.BusinessLogic [main] 1524562666
+2021-07-16 00:59:40,831 INFO c.s.f.u.BusinessLogic [main] 202122028
+2021-07-16 00:59:40,831 INFO c.s.f.u.BusinessLogic [main] 1158428664
+2021-07-16 00:59:40,831 INFO c.s.f.u.BusinessLogic [main] 1121179440
+2021-07-16 00:59:40,831 INFO c.s.f.u.BusinessLogic [main] ------------------------Interfaces examples------------------------
+2021-07-16 00:59:40,832 INFO c.s.f.f.FinInBroker [main] Broker say sm.
+2021-07-16 00:59:40,832 INFO c.s.f.f.FinInDealer [main] Dealer say sm.
+2021-07-16 00:59:40,832 INFO c.s.f.f.FinInBroker [main] Broker say: I can give money
+2021-07-16 00:59:40,832 INFO c.s.f.f.FinInDealer [main] Dealer say : I can give money
+2021-07-16 00:59:40,832 INFO c.s.f.f.FinInStockExchange [main] StockExchange get smt item
+2021-07-16 00:59:40,832 INFO c.s.f.f.FinInPopshop [main] Pop shop get smt item
+2021-07-16 00:59:40,832 INFO c.s.f.c.ClientsGovernment [main] Rails rate for smt. %
+2021-07-16 00:59:40,832 INFO c.s.f.f.FInInBank [main] Rails rate for smt. %
+2021-07-16 00:59:40,832 INFO c.s.f.c.ClientsLegalP [main] Previous address = Kyiv, Khreshchatyk 4
+2021-07-16 00:59:40,832 INFO c.s.f.c.ClientsLegalP [main] . New address = new address of street
+2021-07-16 00:59:40,832 INFO c.s.f.u.BusinessLogic [main] ------------------------Generic examples------------------------
+2021-07-16 00:59:40,834 INFO c.s.f.u.BusinessLogic [main] ------------------------Collections and map examples------------------------
+2021-07-16 01:02:23,435 INFO c.s.f.u.BusinessLogic [main] ------------------------All created class to Loger------------------------
+2021-07-16 01:02:23,445 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:02:23,445 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:02:23,445 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 01:02:23,445 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 01:02:23,446 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 01:02:23,446 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 01:02:23,447 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 01:02:23,447 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 01:02:23,447 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 01:02:23,451 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 01:02:23,451 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 01:02:23,452 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 01:02:23,452 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 01:02:23,455 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 01:02:23,456 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = "OOO Company", Client money = 10000, address = Kyiv, Khreshchatyk 4
+2021-07-16 01:02:23,456 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Government, Client money = 1000000000, Credit percent = 20, Foundation date 1900
+2021-07-16 01:02:23,456 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 01:02:23,457 INFO c.s.f.c.ClientsNaturalP [main] Cashier ask "Kotobank" financial institute about bank possibility: 
+2021-07-16 01:02:23,458 INFO c.s.f.c.ClientsNaturalP [main] Money in the bank:14000, currency: UAH
+2021-07-16 01:02:23,463 INFO c.s.f.s.StaffCashier [main] Karina say: The bank can issue a loan in the amount 120 UAH for you
+2021-07-16 01:02:23,463 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 01:02:23,463 INFO c.s.f.u.BusinessLogic [main] ------------------------Other class interaction examples------------------------
+2021-07-16 01:02:23,463 INFO c.s.f.f.FinInPensionFund [main] Can't issue a loan. You need to be of retirement age
+2021-07-16 01:02:23,463 INFO c.s.f.f.FinInBase [main]  Kotobank can issue a loan
+2021-07-16 01:02:23,464 INFO c.s.f.s.StaffGuard [main] You need to go to the cashier. Go further into the room
+2021-07-16 01:02:23,464 INFO c.s.f.s.StaffDirector [main] Security!
+2021-07-16 01:02:23,464 INFO c.s.f.s.StaffGuard [main] The security guard takes the person out of the room
+2021-07-16 01:02:23,464 INFO c.s.f.s.StaffDirector [main] The director and the representative of the government retired to the dark and secret room.
+2021-07-16 01:02:23,464 INFO c.s.f.s.StaffBase [main] Your salary,Karina, has been credited to the card. Amount: 0
+2021-07-16 01:02:23,464 INFO c.s.f.s.StaffBase [main] Your salary,Marina, has been credited to the card. Amount: 0
+2021-07-16 01:02:23,464 INFO c.s.f.s.StaffBooker [main]  Marinasay: Today is not a salary day. Wait for the 1st date of the month
+2021-07-16 01:02:23,465 INFO c.s.f.c.ClientsLegalP [main] Payment is successful! Company "OOO Company" balance after purchase: 8900
+2021-07-16 01:02:23,465 INFO c.s.f.f.FinInInsurance [main] Our company has 4 tariff packages. Their names: Base+, Base+1, Base+2, Family+
+2021-07-16 01:02:23,465 INFO c.s.f.f.FinInInvestmentCompany [main] Our companys director name: Petya
+2021-07-16 01:02:23,465 INFO c.s.f.f.FinInPopshop [main] We have:1002 EUR
+2021-07-16 01:02:23,465 INFO c.s.f.f.FinInStockExchange [main] We have:1000 In currency:EUR
+2021-07-16 01:02:23,465 INFO c.s.f.f.FinInInvestmentCompany [main] We have:1001 EUR
+2021-07-16 01:02:23,466 INFO c.s.f.u.BusinessLogic [main] ------------------------toString() examples------------------------
+2021-07-16 01:02:23,466 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:02:23,466 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:02:23,466 INFO c.s.f.u.BusinessLogic [main] bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 01:02:23,466 INFO c.s.f.u.BusinessLogic [main] bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 01:02:23,467 INFO c.s.f.u.BusinessLogic [main] bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 01:02:23,467 INFO c.s.f.u.BusinessLogic [main] bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 01:02:23,467 INFO c.s.f.u.BusinessLogic [main] bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 01:02:23,467 INFO c.s.f.u.BusinessLogic [main] bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 01:02:23,467 INFO c.s.f.u.BusinessLogic [main] bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 01:02:23,468 INFO c.s.f.u.BusinessLogic [main] Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 01:02:23,468 INFO c.s.f.u.BusinessLogic [main] Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 01:02:23,468 INFO c.s.f.u.BusinessLogic [main] Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 01:02:23,468 INFO c.s.f.u.BusinessLogic [main] Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 01:02:23,468 INFO c.s.f.u.BusinessLogic [main] Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 01:02:23,468 INFO c.s.f.u.BusinessLogic [main] Client name = "OOO Company", Client money = 8900, address = Kyiv, Khreshchatyk 4
+2021-07-16 01:02:23,468 INFO c.s.f.u.BusinessLogic [main] Client name = Government, Client money = 1000000100, Credit percent = 20, Foundation date 1900
+2021-07-16 01:02:23,468 INFO c.s.f.u.BusinessLogic [main] ------------------------equals examples------------------------
+2021-07-16 01:02:23,468 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank1 : true
+2021-07-16 01:02:23,469 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank2 : true
+2021-07-16 01:02:23,469 INFO c.s.f.u.BusinessLogic [main] bank1 equal guard1 : false
+2021-07-16 01:02:23,469 INFO c.s.f.u.BusinessLogic [main] ------------------------hashCode() examples------------------------
+2021-07-16 01:02:23,470 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 01:02:23,470 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 01:02:23,470 INFO c.s.f.u.BusinessLogic [main] 2077087810
+2021-07-16 01:02:23,470 INFO c.s.f.u.BusinessLogic [main] 1768493559
+2021-07-16 01:02:23,470 INFO c.s.f.u.BusinessLogic [main] -612408089
+2021-07-16 01:02:23,470 INFO c.s.f.u.BusinessLogic [main] -121847364
+2021-07-16 01:02:23,470 INFO c.s.f.u.BusinessLogic [main] -214693227
+2021-07-16 01:02:23,470 INFO c.s.f.u.BusinessLogic [main] 445539544
+2021-07-16 01:02:23,471 INFO c.s.f.u.BusinessLogic [main] -668956508
+2021-07-16 01:02:23,471 INFO c.s.f.u.BusinessLogic [main] -710501145
+2021-07-16 01:02:23,471 INFO c.s.f.u.BusinessLogic [main] 1303291265
+2021-07-16 01:02:23,471 INFO c.s.f.u.BusinessLogic [main] 1624148092
+2021-07-16 01:02:23,471 INFO c.s.f.u.BusinessLogic [main] 1524562666
+2021-07-16 01:02:23,471 INFO c.s.f.u.BusinessLogic [main] 202122028
+2021-07-16 01:02:23,471 INFO c.s.f.u.BusinessLogic [main] 1158428664
+2021-07-16 01:02:23,471 INFO c.s.f.u.BusinessLogic [main] 1121179440
+2021-07-16 01:02:23,471 INFO c.s.f.u.BusinessLogic [main] ------------------------Interfaces examples------------------------
+2021-07-16 01:02:23,471 INFO c.s.f.f.FinInBroker [main] Broker say sm.
+2021-07-16 01:02:23,472 INFO c.s.f.f.FinInDealer [main] Dealer say sm.
+2021-07-16 01:02:23,472 INFO c.s.f.f.FinInBroker [main] Broker say: I can give money
+2021-07-16 01:02:23,472 INFO c.s.f.f.FinInDealer [main] Dealer say : I can give money
+2021-07-16 01:02:23,472 INFO c.s.f.f.FinInStockExchange [main] StockExchange get smt item
+2021-07-16 01:02:23,472 INFO c.s.f.f.FinInPopshop [main] Pop shop get smt item
+2021-07-16 01:02:23,472 INFO c.s.f.c.ClientsGovernment [main] Rails rate for smt. %
+2021-07-16 01:02:23,472 INFO c.s.f.f.FInInBank [main] Rails rate for smt. %
+2021-07-16 01:02:23,472 INFO c.s.f.c.ClientsLegalP [main] Previous address = Kyiv, Khreshchatyk 4
+2021-07-16 01:02:23,472 INFO c.s.f.c.ClientsLegalP [main] . New address = new address of street
+2021-07-16 01:02:23,472 INFO c.s.f.u.BusinessLogic [main] ------------------------Generic examples------------------------
+2021-07-16 01:02:23,473 INFO c.s.f.u.BusinessLogic [main] ------------------------Collections and map examples------------------------
+2021-07-16 01:22:45,422 INFO c.s.f.u.BusinessLogic [main] ------------------------All created class to Loger------------------------
+2021-07-16 01:22:45,432 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:22:45,432 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:22:45,432 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 01:22:45,433 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 01:22:45,433 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 01:22:45,433 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 01:22:45,434 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 01:22:45,434 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 01:22:45,434 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 01:22:45,438 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 01:22:45,438 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 01:22:45,438 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 01:22:45,439 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 01:22:45,442 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 01:22:45,442 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = "OOO Company", Client money = 10000, address = Kyiv, Khreshchatyk 4
+2021-07-16 01:22:45,443 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Government, Client money = 1000000000, Credit percent = 20, Foundation date 1900
+2021-07-16 01:22:45,444 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 01:22:45,444 INFO c.s.f.c.ClientsNaturalP [main] Cashier ask "Kotobank" financial institute about bank possibility: 
+2021-07-16 01:22:45,448 INFO c.s.f.c.ClientsNaturalP [main] Money in the bank:14000, currency: UAH
+2021-07-16 01:22:45,451 INFO c.s.f.s.StaffCashier [main] Karina say: The bank can issue a loan in the amount 120 UAH for you
+2021-07-16 01:22:45,451 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 01:22:45,452 INFO c.s.f.u.BusinessLogic [main] ------------------------Other class interaction examples------------------------
+2021-07-16 01:22:45,452 INFO c.s.f.f.FinInPensionFund [main] Can't issue a loan. You need to be of retirement age
+2021-07-16 01:22:45,452 INFO c.s.f.f.FinInBase [main]  Kotobank can issue a loan
+2021-07-16 01:22:45,452 INFO c.s.f.s.StaffGuard [main] You need to go to the cashier. Go further into the room
+2021-07-16 01:22:45,452 INFO c.s.f.s.StaffDirector [main] Security!
+2021-07-16 01:22:45,452 INFO c.s.f.s.StaffGuard [main] The security guard takes the person out of the room
+2021-07-16 01:22:45,452 INFO c.s.f.s.StaffDirector [main] The director and the representative of the government retired to the dark and secret room.
+2021-07-16 01:22:45,453 INFO c.s.f.s.StaffBase [main] Your salary,Karina, has been credited to the card. Amount: 0
+2021-07-16 01:22:45,453 INFO c.s.f.s.StaffBase [main] Your salary,Marina, has been credited to the card. Amount: 0
+2021-07-16 01:22:45,453 INFO c.s.f.s.StaffBooker [main]  Marinasay: Today is not a salary day. Wait for the 1st date of the month
+2021-07-16 01:22:45,455 INFO c.s.f.c.ClientsLegalP [main] Payment is successful! Company "OOO Company" balance after purchase: 8900
+2021-07-16 01:22:45,455 INFO c.s.f.f.FinInInsurance [main] Our company has 4 tariff packages. Their names: Base+, Base+1, Base+2, Family+
+2021-07-16 01:22:45,455 INFO c.s.f.f.FinInInvestmentCompany [main] Our companys director name: Petya
+2021-07-16 01:22:45,455 INFO c.s.f.f.FinInPopshop [main] We have:1002 EUR
+2021-07-16 01:22:45,455 INFO c.s.f.f.FinInStockExchange [main] We have:1000 In currency:EUR
+2021-07-16 01:22:45,458 INFO c.s.f.f.FinInInvestmentCompany [main] We have:1001 EUR
+2021-07-16 01:22:45,459 INFO c.s.f.u.BusinessLogic [main] ------------------------toString() examples------------------------
+2021-07-16 01:22:45,459 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:22:45,459 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:22:45,459 INFO c.s.f.u.BusinessLogic [main] bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 01:22:45,459 INFO c.s.f.u.BusinessLogic [main] bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 01:22:45,459 INFO c.s.f.u.BusinessLogic [main] bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 01:22:45,459 INFO c.s.f.u.BusinessLogic [main] bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 01:22:45,459 INFO c.s.f.u.BusinessLogic [main] bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 01:22:45,459 INFO c.s.f.u.BusinessLogic [main] bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 01:22:45,460 INFO c.s.f.u.BusinessLogic [main] bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 01:22:45,460 INFO c.s.f.u.BusinessLogic [main] Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 01:22:45,460 INFO c.s.f.u.BusinessLogic [main] Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 01:22:45,460 INFO c.s.f.u.BusinessLogic [main] Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 01:22:45,460 INFO c.s.f.u.BusinessLogic [main] Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 01:22:45,460 INFO c.s.f.u.BusinessLogic [main] Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 01:22:45,460 INFO c.s.f.u.BusinessLogic [main] Client name = "OOO Company", Client money = 8900, address = Kyiv, Khreshchatyk 4
+2021-07-16 01:22:45,460 INFO c.s.f.u.BusinessLogic [main] Client name = Government, Client money = 1000000100, Credit percent = 20, Foundation date 1900
+2021-07-16 01:22:45,460 INFO c.s.f.u.BusinessLogic [main] ------------------------equals examples------------------------
+2021-07-16 01:22:45,461 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank1 : true
+2021-07-16 01:22:45,461 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank2 : true
+2021-07-16 01:22:45,461 INFO c.s.f.u.BusinessLogic [main] bank1 equal guard1 : false
+2021-07-16 01:22:45,461 INFO c.s.f.u.BusinessLogic [main] ------------------------hashCode() examples------------------------
+2021-07-16 01:22:45,462 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 01:22:45,462 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 01:22:45,462 INFO c.s.f.u.BusinessLogic [main] 2077087810
+2021-07-16 01:22:45,462 INFO c.s.f.u.BusinessLogic [main] 1768493559
+2021-07-16 01:22:45,462 INFO c.s.f.u.BusinessLogic [main] -612408089
+2021-07-16 01:22:45,462 INFO c.s.f.u.BusinessLogic [main] -121847364
+2021-07-16 01:22:45,462 INFO c.s.f.u.BusinessLogic [main] -214693227
+2021-07-16 01:22:45,462 INFO c.s.f.u.BusinessLogic [main] 445539544
+2021-07-16 01:22:45,463 INFO c.s.f.u.BusinessLogic [main] -668956508
+2021-07-16 01:22:45,463 INFO c.s.f.u.BusinessLogic [main] -710501145
+2021-07-16 01:22:45,463 INFO c.s.f.u.BusinessLogic [main] 1303291265
+2021-07-16 01:22:45,463 INFO c.s.f.u.BusinessLogic [main] 1624148092
+2021-07-16 01:22:45,463 INFO c.s.f.u.BusinessLogic [main] 1524562666
+2021-07-16 01:22:45,463 INFO c.s.f.u.BusinessLogic [main] 202122028
+2021-07-16 01:22:45,463 INFO c.s.f.u.BusinessLogic [main] 1158428664
+2021-07-16 01:22:45,463 INFO c.s.f.u.BusinessLogic [main] 1121179440
+2021-07-16 01:22:45,463 INFO c.s.f.u.BusinessLogic [main] ------------------------Interfaces examples------------------------
+2021-07-16 01:22:45,463 INFO c.s.f.f.FinInBroker [main] Broker say sm.
+2021-07-16 01:22:45,463 INFO c.s.f.f.FinInDealer [main] Dealer say sm.
+2021-07-16 01:22:45,464 INFO c.s.f.f.FinInBroker [main] Broker say: I can give money
+2021-07-16 01:22:45,464 INFO c.s.f.f.FinInDealer [main] Dealer say : I can give money
+2021-07-16 01:22:45,464 INFO c.s.f.f.FinInStockExchange [main] StockExchange get smt item
+2021-07-16 01:22:45,464 INFO c.s.f.f.FinInPopshop [main] Pop shop get smt item
+2021-07-16 01:22:45,464 INFO c.s.f.c.ClientsGovernment [main] Rails rate for smt. %
+2021-07-16 01:22:45,464 INFO c.s.f.f.FInInBank [main] Rails rate for smt. %
+2021-07-16 01:22:45,464 INFO c.s.f.c.ClientsLegalP [main] Previous address = Kyiv, Khreshchatyk 4
+2021-07-16 01:22:45,464 INFO c.s.f.c.ClientsLegalP [main] . New address = new address of street
+2021-07-16 01:22:45,465 INFO c.s.f.u.BusinessLogic [main] ------------------------Generic examples------------------------
+2021-07-16 01:22:45,473 INFO c.s.f.u.BusinessLogic [main] ------------------------Collections and map examples------------------------
+2021-07-16 01:27:59,028 INFO c.s.f.u.BusinessLogic [main] ------------------------All created class to Loger------------------------
+2021-07-16 01:27:59,037 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:27:59,038 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:27:59,038 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 01:27:59,038 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 01:27:59,039 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 01:27:59,039 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 01:27:59,039 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 01:27:59,040 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 01:27:59,040 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 01:27:59,043 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 01:27:59,043 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 01:27:59,046 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 01:27:59,047 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 01:27:59,050 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 01:27:59,051 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = "OOO Company", Client money = 10000, address = Kyiv, Khreshchatyk 4
+2021-07-16 01:27:59,051 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Government, Client money = 1000000000, Credit percent = 20, Foundation date 1900
+2021-07-16 01:27:59,051 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 01:27:59,051 INFO c.s.f.c.ClientsNaturalP [main] Cashier ask "Kotobank" financial institute about bank possibility: 
+2021-07-16 01:27:59,053 INFO c.s.f.c.ClientsNaturalP [main] Money in the bank:14000, currency: UAH
+2021-07-16 01:27:59,056 INFO c.s.f.s.StaffCashier [main] Karina say: The bank can issue a loan in the amount 120 UAH for you
+2021-07-16 01:27:59,056 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 01:27:59,057 INFO c.s.f.u.BusinessLogic [main] ------------------------Other class interaction examples------------------------
+2021-07-16 01:27:59,057 INFO c.s.f.f.FinInPensionFund [main] Can't issue a loan. You need to be of retirement age
+2021-07-16 01:27:59,057 INFO c.s.f.f.FinInBase [main]  Kotobank can issue a loan
+2021-07-16 01:27:59,057 INFO c.s.f.s.StaffGuard [main] You need to go to the cashier. Go further into the room
+2021-07-16 01:27:59,058 INFO c.s.f.s.StaffDirector [main] Security!
+2021-07-16 01:27:59,058 INFO c.s.f.s.StaffGuard [main] The security guard takes the person out of the room
+2021-07-16 01:27:59,058 INFO c.s.f.s.StaffDirector [main] The director and the representative of the government retired to the dark and secret room.
+2021-07-16 01:27:59,058 INFO c.s.f.s.StaffBase [main] Your salary,Karina, has been credited to the card. Amount: 0
+2021-07-16 01:27:59,058 INFO c.s.f.s.StaffBase [main] Your salary,Marina, has been credited to the card. Amount: 0
+2021-07-16 01:27:59,058 INFO c.s.f.s.StaffBooker [main]  Marinasay: Today is not a salary day. Wait for the 1st date of the month
+2021-07-16 01:27:59,058 INFO c.s.f.c.ClientsLegalP [main] Payment is successful! Company "OOO Company" balance after purchase: 8900
+2021-07-16 01:27:59,059 INFO c.s.f.f.FinInInsurance [main] Our company has 4 tariff packages. Their names: Base+, Base+1, Base+2, Family+
+2021-07-16 01:27:59,059 INFO c.s.f.f.FinInInvestmentCompany [main] Our companys director name: Petya
+2021-07-16 01:27:59,059 INFO c.s.f.f.FinInPopshop [main] We have:1002 EUR
+2021-07-16 01:27:59,059 INFO c.s.f.f.FinInStockExchange [main] We have:1000 In currency:EUR
+2021-07-16 01:27:59,059 INFO c.s.f.f.FinInInvestmentCompany [main] We have:1001 EUR
+2021-07-16 01:27:59,059 INFO c.s.f.u.BusinessLogic [main] ------------------------toString() examples------------------------
+2021-07-16 01:27:59,059 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:27:59,060 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:27:59,060 INFO c.s.f.u.BusinessLogic [main] bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 01:27:59,060 INFO c.s.f.u.BusinessLogic [main] bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 01:27:59,060 INFO c.s.f.u.BusinessLogic [main] bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 01:27:59,060 INFO c.s.f.u.BusinessLogic [main] bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 01:27:59,060 INFO c.s.f.u.BusinessLogic [main] bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 01:27:59,060 INFO c.s.f.u.BusinessLogic [main] bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 01:27:59,061 INFO c.s.f.u.BusinessLogic [main] bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 01:27:59,061 INFO c.s.f.u.BusinessLogic [main] Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 01:27:59,061 INFO c.s.f.u.BusinessLogic [main] Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 01:27:59,061 INFO c.s.f.u.BusinessLogic [main] Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 01:27:59,061 INFO c.s.f.u.BusinessLogic [main] Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 01:27:59,061 INFO c.s.f.u.BusinessLogic [main] Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 01:27:59,061 INFO c.s.f.u.BusinessLogic [main] Client name = "OOO Company", Client money = 8900, address = Kyiv, Khreshchatyk 4
+2021-07-16 01:27:59,061 INFO c.s.f.u.BusinessLogic [main] Client name = Government, Client money = 1000000100, Credit percent = 20, Foundation date 1900
+2021-07-16 01:27:59,061 INFO c.s.f.u.BusinessLogic [main] ------------------------equals examples------------------------
+2021-07-16 01:27:59,062 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank1 : true
+2021-07-16 01:27:59,062 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank2 : true
+2021-07-16 01:27:59,062 INFO c.s.f.u.BusinessLogic [main] bank1 equal guard1 : false
+2021-07-16 01:27:59,062 INFO c.s.f.u.BusinessLogic [main] ------------------------hashCode() examples------------------------
+2021-07-16 01:27:59,063 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 01:27:59,063 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 01:27:59,063 INFO c.s.f.u.BusinessLogic [main] 2077087810
+2021-07-16 01:27:59,063 INFO c.s.f.u.BusinessLogic [main] 1768493559
+2021-07-16 01:27:59,063 INFO c.s.f.u.BusinessLogic [main] -612408089
+2021-07-16 01:27:59,063 INFO c.s.f.u.BusinessLogic [main] -121847364
+2021-07-16 01:27:59,063 INFO c.s.f.u.BusinessLogic [main] -214693227
+2021-07-16 01:27:59,063 INFO c.s.f.u.BusinessLogic [main] 445539544
+2021-07-16 01:27:59,063 INFO c.s.f.u.BusinessLogic [main] -668956508
+2021-07-16 01:27:59,064 INFO c.s.f.u.BusinessLogic [main] -710501145
+2021-07-16 01:27:59,064 INFO c.s.f.u.BusinessLogic [main] 1303291265
+2021-07-16 01:27:59,064 INFO c.s.f.u.BusinessLogic [main] 1624148092
+2021-07-16 01:27:59,064 INFO c.s.f.u.BusinessLogic [main] 1524562666
+2021-07-16 01:27:59,064 INFO c.s.f.u.BusinessLogic [main] 202122028
+2021-07-16 01:27:59,064 INFO c.s.f.u.BusinessLogic [main] 1158428664
+2021-07-16 01:27:59,064 INFO c.s.f.u.BusinessLogic [main] 1121179440
+2021-07-16 01:27:59,064 INFO c.s.f.u.BusinessLogic [main] ------------------------Interfaces examples------------------------
+2021-07-16 01:27:59,064 INFO c.s.f.f.FinInBroker [main] Broker say sm.
+2021-07-16 01:27:59,064 INFO c.s.f.f.FinInDealer [main] Dealer say sm.
+2021-07-16 01:27:59,064 INFO c.s.f.f.FinInBroker [main] Broker say: I can give money
+2021-07-16 01:27:59,064 INFO c.s.f.f.FinInDealer [main] Dealer say : I can give money
+2021-07-16 01:27:59,065 INFO c.s.f.f.FinInStockExchange [main] StockExchange get smt item
+2021-07-16 01:27:59,065 INFO c.s.f.f.FinInPopshop [main] Pop shop get smt item
+2021-07-16 01:27:59,065 INFO c.s.f.c.ClientsGovernment [main] Rails rate for smt. %
+2021-07-16 01:27:59,065 INFO c.s.f.f.FInInBank [main] Rails rate for smt. %
+2021-07-16 01:27:59,065 INFO c.s.f.c.ClientsLegalP [main] Previous address = Kyiv, Khreshchatyk 4
+2021-07-16 01:27:59,065 INFO c.s.f.c.ClientsLegalP [main] . New address = new address of street
+2021-07-16 01:27:59,065 INFO c.s.f.u.BusinessLogic [main] ------------------------Generic examples------------------------
+2021-07-16 01:27:59,066 INFO c.s.f.u.BusinessLogic [main] ------------------------Collections and map examples------------------------
+2021-07-16 01:28:28,124 INFO c.s.f.u.BusinessLogic [main] ------------------------All created class to Loger------------------------
+2021-07-16 01:28:28,135 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:28:28,135 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:28:28,135 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 01:28:28,136 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 01:28:28,136 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 01:28:28,137 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 01:28:28,137 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 01:28:28,137 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 01:28:28,138 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 01:28:28,141 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 01:28:28,142 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 01:28:28,142 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 01:28:28,142 INFO c.s.f.u.BusinessLogic [main] Create new Staff: Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 01:28:28,145 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 01:28:28,145 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = "OOO Company", Client money = 10000, address = Kyiv, Khreshchatyk 4
+2021-07-16 01:28:28,146 INFO c.s.f.u.BusinessLogic [main] Create new Client: Client name = Government, Client money = 1000000000, Credit percent = 20, Foundation date 1900
+2021-07-16 01:28:28,146 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 01:28:28,146 INFO c.s.f.c.ClientsNaturalP [main] Cashier ask "Kotobank" financial institute about bank possibility: 
+2021-07-16 01:28:28,147 INFO c.s.f.c.ClientsNaturalP [main] Money in the bank:14000, currency: UAH
+2021-07-16 01:28:28,150 INFO c.s.f.s.StaffCashier [main] Karina say: The bank can issue a loan in the amount 120 UAH for you
+2021-07-16 01:28:28,151 INFO c.s.f.u.BusinessLogic [main] ------------------------my question------------------------
+2021-07-16 01:28:28,151 INFO c.s.f.u.BusinessLogic [main] ------------------------Other class interaction examples------------------------
+2021-07-16 01:28:28,151 INFO c.s.f.f.FinInPensionFund [main] Can't issue a loan. You need to be of retirement age
+2021-07-16 01:28:28,152 INFO c.s.f.f.FinInBase [main]  Kotobank can issue a loan
+2021-07-16 01:28:28,152 INFO c.s.f.s.StaffGuard [main] You need to go to the cashier. Go further into the room
+2021-07-16 01:28:28,152 INFO c.s.f.s.StaffDirector [main] Security!
+2021-07-16 01:28:28,152 INFO c.s.f.s.StaffGuard [main] The security guard takes the person out of the room
+2021-07-16 01:28:28,152 INFO c.s.f.s.StaffDirector [main] The director and the representative of the government retired to the dark and secret room.
+2021-07-16 01:28:28,152 INFO c.s.f.s.StaffBase [main] Your salary,Karina, has been credited to the card. Amount: 0
+2021-07-16 01:28:28,153 INFO c.s.f.s.StaffBase [main] Your salary,Marina, has been credited to the card. Amount: 0
+2021-07-16 01:28:28,153 INFO c.s.f.s.StaffBooker [main]  Marinasay: Today is not a salary day. Wait for the 1st date of the month
+2021-07-16 01:28:28,153 INFO c.s.f.c.ClientsLegalP [main] Payment is successful! Company "OOO Company" balance after purchase: 8900
+2021-07-16 01:28:28,153 INFO c.s.f.f.FinInInsurance [main] Our company has 4 tariff packages. Their names: Base+, Base+1, Base+2, Family+
+2021-07-16 01:28:28,153 INFO c.s.f.f.FinInInvestmentCompany [main] Our companys director name: Petya
+2021-07-16 01:28:28,153 INFO c.s.f.f.FinInPopshop [main] We have:1002 EUR
+2021-07-16 01:28:28,153 INFO c.s.f.f.FinInStockExchange [main] We have:1000 In currency:EUR
+2021-07-16 01:28:28,154 INFO c.s.f.f.FinInInvestmentCompany [main] We have:1001 EUR
+2021-07-16 01:28:28,154 INFO c.s.f.u.BusinessLogic [main] ------------------------toString() examples------------------------
+2021-07-16 01:28:28,154 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:28:28,154 INFO c.s.f.u.BusinessLogic [main] bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
+2021-07-16 01:28:28,154 INFO c.s.f.u.BusinessLogic [main] bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
+2021-07-16 01:28:28,154 INFO c.s.f.u.BusinessLogic [main] bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
+2021-07-16 01:28:28,154 INFO c.s.f.u.BusinessLogic [main] bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
+2021-07-16 01:28:28,154 INFO c.s.f.u.BusinessLogic [main] bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
+2021-07-16 01:28:28,155 INFO c.s.f.u.BusinessLogic [main] bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
+2021-07-16 01:28:28,155 INFO c.s.f.u.BusinessLogic [main] bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
+2021-07-16 01:28:28,155 INFO c.s.f.u.BusinessLogic [main] bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
+2021-07-16 01:28:28,155 INFO c.s.f.u.BusinessLogic [main] Stuff name = Durik, Stuff аge = 0, Sallary = 0, can only speak with = GovernmentBank guard Vasya
+2021-07-16 01:28:28,155 INFO c.s.f.u.BusinessLogic [main] Stuff name = Karina, Stuff аge = 0, Sallary = 0, her car = Mazda
+2021-07-16 01:28:28,155 INFO c.s.f.u.BusinessLogic [main] Stuff name = Vasya, Stuff аge = 0, Sallary = 0, room number = 404
+2021-07-16 01:28:28,155 INFO c.s.f.u.BusinessLogic [main] Stuff name = Marina, Stuff аge = 0, Sallary = 0, her pet = Kek
+2021-07-16 01:28:28,155 INFO c.s.f.u.BusinessLogic [main] Client name = Marik, Client money = 20, male = Male, Age = 35
+2021-07-16 01:28:28,155 INFO c.s.f.u.BusinessLogic [main] Client name = "OOO Company", Client money = 8900, address = Kyiv, Khreshchatyk 4
+2021-07-16 01:28:28,156 INFO c.s.f.u.BusinessLogic [main] Client name = Government, Client money = 1000000100, Credit percent = 20, Foundation date 1900
+2021-07-16 01:28:28,156 INFO c.s.f.u.BusinessLogic [main] ------------------------equals examples------------------------
+2021-07-16 01:28:28,156 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank1 : true
+2021-07-16 01:28:28,156 INFO c.s.f.u.BusinessLogic [main] bank1 equal bank2 : true
+2021-07-16 01:28:28,156 INFO c.s.f.u.BusinessLogic [main] bank1 equal guard1 : false
+2021-07-16 01:28:28,156 INFO c.s.f.u.BusinessLogic [main] ------------------------hashCode() examples------------------------
+2021-07-16 01:28:28,157 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 01:28:28,157 INFO c.s.f.u.BusinessLogic [main] -558035096
+2021-07-16 01:28:28,157 INFO c.s.f.u.BusinessLogic [main] 2077087810
+2021-07-16 01:28:28,157 INFO c.s.f.u.BusinessLogic [main] 1768493559
+2021-07-16 01:28:28,157 INFO c.s.f.u.BusinessLogic [main] -612408089
+2021-07-16 01:28:28,157 INFO c.s.f.u.BusinessLogic [main] -121847364
+2021-07-16 01:28:28,157 INFO c.s.f.u.BusinessLogic [main] -214693227
+2021-07-16 01:28:28,158 INFO c.s.f.u.BusinessLogic [main] 445539544
+2021-07-16 01:28:28,158 INFO c.s.f.u.BusinessLogic [main] -668956508
+2021-07-16 01:28:28,158 INFO c.s.f.u.BusinessLogic [main] -710501145
+2021-07-16 01:28:28,158 INFO c.s.f.u.BusinessLogic [main] 1303291265
+2021-07-16 01:28:28,158 INFO c.s.f.u.BusinessLogic [main] 1624148092
+2021-07-16 01:28:28,158 INFO c.s.f.u.BusinessLogic [main] 1524562666
+2021-07-16 01:28:28,158 INFO c.s.f.u.BusinessLogic [main] 202122028
+2021-07-16 01:28:28,158 INFO c.s.f.u.BusinessLogic [main] 1158428664
+2021-07-16 01:28:28,158 INFO c.s.f.u.BusinessLogic [main] 1121179440
+2021-07-16 01:28:28,158 INFO c.s.f.u.BusinessLogic [main] ------------------------Interfaces examples------------------------
+2021-07-16 01:28:28,159 INFO c.s.f.f.FinInBroker [main] Broker say sm.
+2021-07-16 01:28:28,159 INFO c.s.f.f.FinInDealer [main] Dealer say sm.
+2021-07-16 01:28:28,159 INFO c.s.f.f.FinInBroker [main] Broker say: I can give money
+2021-07-16 01:28:28,159 INFO c.s.f.f.FinInDealer [main] Dealer say : I can give money
+2021-07-16 01:28:28,159 INFO c.s.f.f.FinInStockExchange [main] StockExchange get smt item
+2021-07-16 01:28:28,159 INFO c.s.f.f.FinInPopshop [main] Pop shop get smt item
+2021-07-16 01:28:28,159 INFO c.s.f.c.ClientsGovernment [main] Rails rate for smt. %
+2021-07-16 01:28:28,159 INFO c.s.f.f.FInInBank [main] Rails rate for smt. %
+2021-07-16 01:28:28,159 INFO c.s.f.c.ClientsLegalP [main] Previous address = Kyiv, Khreshchatyk 4
+2021-07-16 01:28:28,159 INFO c.s.f.c.ClientsLegalP [main] . New address = new address of street
+2021-07-16 01:28:28,159 INFO c.s.f.u.BusinessLogic [main] ------------------------Generic examples------------------------
+2021-07-16 01:28:28,160 INFO c.s.f.u.BusinessLogic [main] ------------------------Collections and map examples------------------------

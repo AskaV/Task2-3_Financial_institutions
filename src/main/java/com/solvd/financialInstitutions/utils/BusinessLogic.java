@@ -9,7 +9,7 @@ import com.solvd.financialInstitutions.staff.StaffBooker;
 import com.solvd.financialInstitutions.staff.StaffCashier;
 import com.solvd.financialInstitutions.staff.StaffDirector;
 import com.solvd.financialInstitutions.staff.StaffGuard;
-import com.solvd.financialInstitutions.utils.generics.clGovGeneriс;
+import com.solvd.financialInstitutions.utils.generics.clientsGeneriс;
 import com.solvd.financialInstitutions.utils.interfaces.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -199,20 +199,23 @@ public class BusinessLogic {
         }
 
         LOGGER.info("------------------------Generic examples------------------------");
-        clGovGeneriс<ClientsBase> clGovGeneriс = new clGovGeneriс<>();
+        clientsGeneriс<ClientsBase> clGovGeneriс = new clientsGeneriс<>();
         ClientsGovernment clGov02 = new ClientsGovernment();
         ClientsLegalP clLegLp02 = new ClientsLegalP();
         //StaffBooker StBoo02 = new StaffBooker();   //as an example, creating this instance of the class
-        //clGovGenerik.getClients().add(StBoo02);    //displays an incorrect type error here
+        //clGovGeneriс.getClients().add(StBoo02);    //displays an incorrect type error here
         clGovGeneriс.getClients().add(clGov02);
         clGovGeneriс.getClients().add(clLegLp02);
         System.out.println(clGov02.toString());
-        List<ClientsBase> clientsBaseList = clGovGeneriс.clients;
+        List<ClientsBase> clientsBaseList = clGovGeneriс.getClients();
+        System.out.println(clientsBaseList);
 
+        LOGGER.info("------------------------Collections and map examples------------------------");
 
-
-
-
-
+        baseOfCollectionsAndMap baseOfValues = new baseOfCollectionsAndMap();
+        baseOfValues.setNewName("Zarina");
+        System.out.println(baseOfValues.getRandomAge());
+        System.out.println(baseOfValues.getRandomName());
+        baseOfValues.printHashMap();
     }
 }
