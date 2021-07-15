@@ -1,21 +1,27 @@
 package com.solvd.financialInstitutions.utils;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class baseOfCollectionsAndMap {
-    private ArrayList<Integer> ages = new ArrayList<>(110);
+    private static final Logger LOGGER = LogManager.getLogger(BusinessLogic.class);
+
+    private ArrayList<Integer> ages = new ArrayList<>(110); // toDoadd to 3 base class constructors to create classes with preset variables
     private ArrayList<String> names = new ArrayList<>();
     private HashMap<Integer, String> FinInstClients = new HashMap<>();
-    //sallarys
-    //curensy
+    private ArrayList<Integer> sallarys = new ArrayList<>();
+    private ArrayList<String> curensy = new ArrayList<>();
+
 
     public baseOfCollectionsAndMap() {
         ageCreator();
         nameCreator();
         hashMapCreator();
-
-
+        sallarysCreator();
+        curensyCreator();
     }
 
     public Integer getRandomAge() {
@@ -27,9 +33,8 @@ public class baseOfCollectionsAndMap {
     }
 
     public void printHashMap() {
-        FinInstClients.values().forEach(System.out::println);
-        FinInstClients.keySet().forEach(System.out::println);
-
+        //FinInstClients.values().forEach(System.out::println);
+        //FinInstClients.keySet().forEach(System.out::println);
     }
 
     private void hashMapCreator() {
@@ -61,6 +66,27 @@ public class baseOfCollectionsAndMap {
     private <E> Integer randomisePos(ArrayList<E> listNames) {
         int randNumber = 0 + (int) (Math.random() * listNames.size());
         return randNumber;
+    }
+
+    private void sallarysCreator() {//toDo you can add values ​​from 1000 to 10000 with an ending of two 00
+        this.sallarys.add(1000);
+        this.sallarys.add(1100);
+        this.sallarys.add(1200);
+        this.sallarys.add(1300);
+    }
+
+    public void setSallarys(ArrayList<Integer> sallarys) {
+        this.sallarys = sallarys;
+    }
+    public void setCurensy(ArrayList<String> curensy){
+        this.curensy = curensy;
+
+    }
+
+    private void curensyCreator() {
+        this.curensy.add("USD");
+        this.curensy.add("Hrn");
+        this.curensy.add("EUR");
     }
 
 

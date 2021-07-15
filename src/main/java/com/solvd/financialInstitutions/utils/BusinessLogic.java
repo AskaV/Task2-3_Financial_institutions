@@ -206,16 +206,16 @@ public class BusinessLogic {
         //clGovGeneriс.getClients().add(StBoo02);    //displays an incorrect type error here
         clGovGeneriс.getClients().add(clGov02);
         clGovGeneriс.getClients().add(clLegLp02);
-        System.out.println(clGov02.toString());
+        //System.out.println(clGov02.toString());
         List<ClientsBase> clientsBaseList = clGovGeneriс.getClients();
-        System.out.println(clientsBaseList);
+        //System.out.println(clientsBaseList);
 
         LOGGER.info("------------------------Collections and map examples------------------------");
 
         baseOfCollectionsAndMap baseOfValues = new baseOfCollectionsAndMap();
         baseOfValues.setNewName("Zarina");
-        System.out.println(baseOfValues.getRandomAge());
-        System.out.println(baseOfValues.getRandomName());
+        //System.out.println(baseOfValues.getRandomAge());
+        //System.out.println(baseOfValues.getRandomName());
         baseOfValues.printHashMap();
     }
 }
