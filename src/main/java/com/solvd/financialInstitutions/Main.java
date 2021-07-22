@@ -1,8 +1,7 @@
 package com.solvd.financialInstitutions;
 
 import com.solvd.financialInstitutions.utils.*;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 
 /**
  * There are 3 base (abstract) classes from which the rest of the subclasses inherit:
@@ -27,5 +26,10 @@ public class Main {
         BusinessLogic businessLogic = new BusinessLogic();
         businessLogic.start();
 
+//        int[] unsMass = new int[]{20, 1, 19, 1, 14};
+//        new myLinkedListGetAndAdd();
+//        for (int i = 1; i < unsMass.length; i++) {
+//            myLinkedListGetAndAdd.insert(new myLinkedListGetAndAdd(unsMass[i]));
+//        }
     }
 }

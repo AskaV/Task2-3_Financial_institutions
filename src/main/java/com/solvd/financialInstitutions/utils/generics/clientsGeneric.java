@@ -5,7 +5,7 @@ import com.solvd.financialInstitutions.clients.ClientsBase;
 import java.util.ArrayList;
 import java.util.List;
 
-public class clientsGeneriс<T extends ClientsBase> {
+public class clientsGeneric<T extends ClientsBase> {
     private T t;
 
 

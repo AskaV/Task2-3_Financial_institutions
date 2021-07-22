@@ -19,8 +19,4 @@
             <AppenderRef ref="Async"/>
         </Root>
     </Loggers>
-
-
-
-
 </Configuration>
