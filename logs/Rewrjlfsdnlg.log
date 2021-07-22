@@ -1,9 +1,0 @@
-2021-07-15 01:11:00,797 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
-2021-07-15 01:11:00,801 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Kotobank, instMoney = 14000, currency = UAH, credit Posibility = true, Bank loan Percentage = 600%
-2021-07-15 01:11:00,802 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Insurance, instMoney = 998, currency = EUR, credit Posibility = false, Bank loan Percentage = Base+%
-2021-07-15 01:11:00,802 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Пенсионеры и пенсионерочки, instMoney = 999, currency = UAH, credit Posibility = false, Talisman = Butterfly
-2021-07-15 01:11:00,803 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = nStockExchange, instMoney = 1000, currency = EUR, credit Posibility = false, URL = www.URL.com
-2021-07-15 01:11:00,803 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Investment Co, instMoney = 1001, currency = EUR, credit Posibility = false, Director name = Petya
-2021-07-15 01:11:00,804 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Finik, instMoney = 1002, currency = EUR, credit Posibility = false, name of the sign = Галочка
-2021-07-15 01:11:00,804 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Dillik, instMoney = 1003, currency = USD, credit Posibility = false, Param = multy
-2021-07-15 01:11:00,804 INFO c.s.f.u.BusinessLogic [main] Create new Financial Institute: bankName = Brokik, instMoney = 1004, currency = EUR, credit Posibility = false, Param = mini
