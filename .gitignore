@@ -1,15 +1,11 @@
+
+.idea/
+logs/
+other/
 *.class
-.other
-.idea
 target/
-.log
-
-
-src/main/resources/log4j2.xml
-.logs
-other/log4j-core-2.14.1.jar
-other/log4j-api-2.14.1.jar
-other/groupId — ярлык.lnk
-*.log
-out/production/Tanda_proj/log4j2.xml
+*.jar
 .gitattributes
+out/production/Tanda_proj/log4j2.xml
+src/main/resources/log4j2.xml
+
