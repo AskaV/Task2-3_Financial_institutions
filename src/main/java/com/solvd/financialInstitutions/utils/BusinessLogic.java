@@ -161,8 +161,7 @@ public class BusinessLogic {
 
         LOGGER.info("------------------------Interfaces examples------------------------");
         if (broker1 instanceof ISpeak) {
-            ISpeak speaker = (ISpeak) broker1;
-            speaker.speaker();
+            ((ISpeak) broker1).speaker();
         }
         if (dealer1 instanceof ISpeak) {
             ISpeak speaker = (ISpeak) dealer1;
