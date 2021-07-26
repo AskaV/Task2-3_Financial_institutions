@@ -9,7 +9,7 @@ import com.solvd.financialInstitutions.staff.StaffBooker;
 import com.solvd.financialInstitutions.staff.StaffCashier;
 import com.solvd.financialInstitutions.staff.StaffDirector;
 import com.solvd.financialInstitutions.staff.StaffGuard;
-import com.solvd.financialInstitutions.utils.generics.clientsGeneric;
+import com.solvd.financialInstitutions.utils.generics.ClientsGeneric;
 import com.solvd.financialInstitutions.utils.interfaces.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -199,7 +199,7 @@ public class BusinessLogic {
         }
 
         LOGGER.info("------------------------Generic examples------------------------");
-        clientsGeneric<ClientsBase> clGovGeneriс = new clientsGeneric<>();
+        ClientsGeneric<ClientsBase> clGovGeneriс = new ClientsGeneric<>();
         ClientsGovernment clGov02 = new ClientsGovernment();
         ClientsLegalP clLegLp02 = new ClientsLegalP();
         //StaffBooker StBoo02 = new StaffBooker();   //as an example, creating this instance of the class
@@ -212,7 +212,7 @@ public class BusinessLogic {
 
         LOGGER.info("------------------------Collections and map examples------------------------");
 
-        baseOfCollectionsAndMap baseOfValues = new baseOfCollectionsAndMap();
+        BaseOfCollectionsAndMap baseOfValues = new BaseOfCollectionsAndMap();
         baseOfValues.setNewName("Zarina");
         //System.out.println(baseOfValues.getRandomAge());
         //System.out.println(baseOfValues.getRandomName());

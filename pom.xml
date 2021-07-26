@@ -7,21 +7,11 @@
     <version>V-1.0</version>
     <packaging>jar</packaging>
 
-
-    <repositories>
-        <repository>
-            <id> com.solvd </id>
-            <name> financialInstitutions </name>
-            <url>https://mySite.com</url>
-        </repository>
-    </repositories>
-
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <org.apache.log4j> 2.14.1</org.apache.log4j>
-
+        <org.apache.log4j>2.14.1</org.apache.log4j>
     </properties>
 
     <dependencies>

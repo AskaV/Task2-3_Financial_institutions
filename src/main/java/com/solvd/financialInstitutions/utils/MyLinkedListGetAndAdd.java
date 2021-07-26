@@ -1,6 +1,6 @@
 package com.solvd.financialInstitutions.utils;
 
-public class myLinkedListGetAndAdd {
+public class MyLinkedListGetAndAdd {
 
     int size = 0;
     private int value;

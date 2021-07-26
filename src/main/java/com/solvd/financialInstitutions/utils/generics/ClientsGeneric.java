@@ -1,13 +1,13 @@
 package com.solvd.financialInstitutions.utils.generics;
 
-import com.solvd.financialInstitutions.finInst.FinInBase;
+import com.solvd.financialInstitutions.clients.ClientsBase;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class finInstGeneric<T extends FinInBase> {
-
+public class ClientsGeneric<T extends ClientsBase> {
     private T t;
+
     private List<T> clients = new ArrayList<>();
 
     public List<T> getClients() {
@@ -21,6 +21,5 @@ public class finInstGeneric<T extends FinInBase> {
     public T get() {
         return t;
     }
-
 
 }

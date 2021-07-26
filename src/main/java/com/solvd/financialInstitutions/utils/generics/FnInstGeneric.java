@@ -1,11 +1,11 @@
 package com.solvd.financialInstitutions.utils.generics;
 
-import com.solvd.financialInstitutions.staff.StaffBase;
+import com.solvd.financialInstitutions.finInst.FinInBase;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class staffGeneric<T extends StaffBase> {
+public class FnInstGeneric<T extends FinInBase> {
 
     private T t;
     private List<T> clients = new ArrayList<>();
@@ -21,5 +21,4 @@ public class staffGeneric<T extends StaffBase> {
     public T get() {
         return t;
     }
-
 }

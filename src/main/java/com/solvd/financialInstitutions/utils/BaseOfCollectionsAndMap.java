@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class baseOfCollectionsAndMap {
+public class BaseOfCollectionsAndMap {
     private static final Logger LOGGER = LogManager.getLogger(BusinessLogic.class);
 
     private ArrayList<Integer> ages = new ArrayList<>(110); // toDoadd to 3 base class constructors to create classes with preset variables
@@ -16,7 +16,7 @@ public class baseOfCollectionsAndMap {
     private ArrayList<String> curensy = new ArrayList<>();
 
 
-    public baseOfCollectionsAndMap() {
+    public BaseOfCollectionsAndMap() {
         ageCreator();
         nameCreator();
         hashMapCreator();
