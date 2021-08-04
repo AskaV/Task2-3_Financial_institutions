@@ -1,5 +1,6 @@
 package com.solvd.financialInstitutions.finInst;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -10,12 +11,28 @@ public abstract class FinInBase {
     private boolean creditPossibility;
     private static final Logger LOGGER = LogManager.getLogger(FinInBase.class);
 
+    private enum currencyes {
+
+        USD("U.S. dollar"),
+        UAH("Ukrainian hryvnia"),
+        EUR("Euro"),
+        RUB("Russian ruble");
+
+        private String itemName;
+
+        private currencyes(String itemName) {
+            this.itemName = itemName;
+        }
+    }
+
+
+
     public FinInBase() {
     }
 
     public FinInBase(int instMoney, String instName, String currency, boolean creditPossibility) {
         this.instMoney = instMoney;
-        this.instName = instName;
+        this.instName = StringUtils.capitalize(instName);
         this.currency = currency;
         this.creditPossibility = creditPossibility;
     }

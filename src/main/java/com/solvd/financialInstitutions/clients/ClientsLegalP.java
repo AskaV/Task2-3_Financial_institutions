@@ -1,19 +1,30 @@
 package com.solvd.financialInstitutions.clients;
 
 import com.solvd.financialInstitutions.utils.interfaces.IChangeRegAddress;
+import org.apache.commons.lang3.time.DateUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.text.ParseException;
+import java.util.Date;
+
 public class ClientsLegalP extends ClientsBase implements IChangeRegAddress {
     private String address;
+    private Date foundDater;
+
     private static final Logger LOGGER = LogManager.getLogger(ClientsLegalP.class);
 
     public ClientsLegalP() {
     }
 
-    public ClientsLegalP(String name, int money, String address) {
+    public ClientsLegalP(String name, int money, String address, String fData) {
         super(name, money);
         this.address = address;
+        try {
+            foundDater = DateUtils.parseDateStrictly(fData, new String[]{"yyyy/MM/dd"});
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 
     public void changeAddress() {
@@ -75,7 +86,7 @@ public class ClientsLegalP extends ClientsBase implements IChangeRegAddress {
 
     @Override
     public int hashCode() {
-        int a = address.hashCode() * super.hashCode();
+        int a = address.hashCode() * super.hashCode() * foundDater.hashCode();
         return a;
     }
 }

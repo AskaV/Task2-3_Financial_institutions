@@ -10,7 +10,7 @@ public class FnInstGeneric<T extends FinInBase> {
     private T t;
     private List<T> clients = new ArrayList<>();
 
-    public List<T> getClients() {
+    public List<T> getClientsBase() {
         return clients;
     }
 

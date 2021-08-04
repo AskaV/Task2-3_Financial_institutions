@@ -10,7 +10,7 @@ public class StaffGeneric<T extends StaffBase> {
     private T t;
     private List<T> clients = new ArrayList<>();
 
-    public List<T> getClients() {
+    public List<T> getClientsBase() {
         return clients;
     }
 

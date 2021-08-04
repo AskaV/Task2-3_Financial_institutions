@@ -1,5 +1,6 @@
 package com.solvd.financialInstitutions.clients;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -7,6 +8,7 @@ public abstract class ClientsBase {
     private String clientName;
     private int clientMoney;
     private static final Logger LOGGER = LogManager.getLogger(ClientsBase.class);
+
 
     public ClientsBase() {
     }
@@ -17,8 +19,15 @@ public abstract class ClientsBase {
     }
 
     public void setClientsBaseName(String setName) {
-        this.clientName = setName;
+        if(StringUtils.isNotEmpty(setName)){
+            StringUtils.capitalize(setName); //Big first letter
+            this.clientName = setName;
+        }
+        else {
+            this.clientName = "Undefined Client Name";
+        }
     }
+
 
     public void setClientsBaseMoney(int setMoney) {
         this.clientMoney = setMoney;

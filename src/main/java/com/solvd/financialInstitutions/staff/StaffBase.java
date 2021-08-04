@@ -1,6 +1,7 @@
 package com.solvd.financialInstitutions.staff;
 
 import com.solvd.financialInstitutions.utils.exeptions.*;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -54,7 +55,13 @@ public abstract class StaffBase {
     }
 
     public void setStuffName(String setStuffName) {
-        this.stuffName = setStuffName;
+        if (StringUtils.isAlpha(setStuffName)){
+            LOGGER.error("Wrong name. Name contains numbers");
+        }
+        else{
+            this.stuffName = setStuffName;
+        }
+
     }
 
     public void setStuffAge(int setStuffAge) {

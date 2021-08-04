@@ -11,10 +11,18 @@ import com.solvd.financialInstitutions.staff.StaffDirector;
 import com.solvd.financialInstitutions.staff.StaffGuard;
 import com.solvd.financialInstitutions.utils.generics.ClientsGeneric;
 import com.solvd.financialInstitutions.utils.interfaces.*;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.time.DateUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+
+import java.text.ParseException;
+import java.util.Date;
 import java.util.List;
+
+import static org.apache.commons.lang3.time.DateUtils.parseDate;
+
 
 /**
  * There are 3 base (abstract) classes from which the rest of the subclasses inherit:
@@ -53,9 +61,10 @@ public class BusinessLogic {
         StaffCashier cashier1 = new StaffCashier("Karina", 19, 1000, "Mazda");
         StaffBooker booker1 = new StaffBooker("Marina", 48, 1200, "Kek");
         //Init Clients
-        ClientsNaturalP naturalP1 = new ClientsNaturalP("Marik", 20, "Male", 35);
-        ClientsLegalP legalLp1 = new ClientsLegalP("\"OOO Company\"", 10000, "Kyiv, Khreshchatyk 4");
-        ClientsGovernment government1 = new ClientsGovernment("Government", 1000000000, 20, 1900);
+        ClientsNaturalP naturalP1 = new ClientsNaturalP("Marik", 20, "Male", 35, "2001/01/15");
+        ClientsLegalP legalLp1 = new ClientsLegalP("\"OOO Company\"", 10000, "Kyiv, Khreshchatyk 4", "1957/12/15");
+        ClientsGovernment government1 = new ClientsGovernment("Government", 1000000000, 20,"1900/12/15");
+
 
         //All created class to Loger
         LOGGER.info("------------------------All created class to Loger------------------------");
@@ -203,10 +212,10 @@ public class BusinessLogic {
         ClientsLegalP clLegLp02 = new ClientsLegalP();
         //StaffBooker StBoo02 = new StaffBooker();   //as an example, creating this instance of the class
         //clGovGeneriс.getClients().add(StBoo02);    //displays an incorrect type error here
-        clGovGeneriс.getClients().add(clGov02);
-        clGovGeneriс.getClients().add(clLegLp02);
+        clGovGeneriс.getClientsBase().add(clGov02);
+        clGovGeneriс.getClientsBase().add(clLegLp02);
         //System.out.println(clGov02.toString());
-        List<ClientsBase> clientsBaseList = clGovGeneriс.getClients();
+        List<ClientsBase> clientsBaseList = clGovGeneriс.getClientsBase();
         //System.out.println(clientsBaseList);
 
         LOGGER.info("------------------------Collections and map examples------------------------");
@@ -216,5 +225,26 @@ public class BusinessLogic {
         //System.out.println(baseOfValues.getRandomAge());
         //System.out.println(baseOfValues.getRandomName());
         baseOfValues.printHashMap();
+
+        LOGGER.info("------------------------Utils------------------------");
+        StringUtils.isBlank("name name name");
+        StringUtils.compare("a", "b");
+//        File myFile1 = new File("E:/Git/0_other/copyfile/f1.txt");
+//        File myFile2 = new File("E:/Git/0_other/copyfile/f2.txt");
+//        FileUtils.touch(myfile1);
+//        FileUtils.myFile1.exists("text 2");
+//        FileUtils.contentEquals(myfile1, myfile2);
+
+        Date date = new Date();
+        date = DateUtils.setYears(date, 2012);
+        try {
+            date = parseDate("1969-25-12", "yyyy-MM-dd");
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
+
+
     }
 }

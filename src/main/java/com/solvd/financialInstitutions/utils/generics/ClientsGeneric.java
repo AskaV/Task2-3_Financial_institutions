@@ -10,7 +10,7 @@ public class ClientsGeneric<T extends ClientsBase> {
 
     private List<T> clients = new ArrayList<>();
 
-    public List<T> getClients() {
+    public List<T> getClientsBase() {
         return clients;
     }
 

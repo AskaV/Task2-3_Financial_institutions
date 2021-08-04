@@ -12,7 +12,7 @@ public class FinInInsurance extends FinInBase {
 
     private static final Logger LOGGER = LogManager.getLogger(FinInInsurance.class);
 
-    private enum TarifyPakets {
+    private enum tarifyPakets {
 
         BASE1("Base +"),
         BASE2("Base+1"),
@@ -21,7 +21,7 @@ public class FinInInsurance extends FinInBase {
 
         private String itemName;
 
-        private TarifyPakets(String itemName) {
+        private tarifyPakets(String itemName) {
             this.itemName = itemName;
         }
     }
@@ -34,14 +34,14 @@ public class FinInInsurance extends FinInBase {
     }
 
     public void pTarifyPaket() {
-        LOGGER.info("Our company has 4 tariff packages. Their names: " + TarifyPakets.BASE1 + ", " + TarifyPakets.BASE2 +
-                ", " + TarifyPakets.BASE3 + ", " + TarifyPakets.BASE4);
+        LOGGER.info("Our company has 4 tariff packages. Their names: " + tarifyPakets.BASE1 + ", " + tarifyPakets.BASE2 +
+                ", " + tarifyPakets.BASE3 + ", " + tarifyPakets.BASE4);
     }
 
     @Override
     public String toString() {
         String str = super.toString();
-        return (str + ", Bank loan Percentage = " + TarifyPakets.BASE1 + "%");
+        return (str + ", Bank loan Percentage = " + tarifyPakets.BASE1 + "%");
     }
 
     @Override
