@@ -4,7 +4,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.stream.IntStream;
 
 public class BaseOfCollectionsAndMap {
     private static final Logger LOGGER = LogManager.getLogger(BusinessLogic.class);
@@ -47,16 +49,14 @@ public class BaseOfCollectionsAndMap {
     }
 
     private void ageCreator() {
-        for (int i = 18; i <= 80; i++) {
-            ages.add(i);//add age of people to the list
-        }
+        IntStream.rangeClosed(18, 80).forEach(i -> ages.add(i));
+        // (int i = 18; i <= 80; i++) {ages.add(i);//add age of people to the list        }
     }
 
     private void nameCreator() {
-        names.add("Angela");
-        names.add("Kristi");
-        names.add("Markus");
-        names.add("Martin");
+        for (String s : Arrays.asList("Angela", "Kristi", "Markus", "Martin")) {
+            names.add(s);
+        }
     }
 
     public void setNewName(String newName) {
@@ -69,24 +69,25 @@ public class BaseOfCollectionsAndMap {
     }
 
     private void sallarysCreator() {//toDo you can add values ​​from 1000 to 10000 with an ending of two 00
-        this.sallarys.add(1000);
-        this.sallarys.add(1100);
-        this.sallarys.add(1200);
-        this.sallarys.add(1300);
+        IntStream.iterate(1000, i -> i <= 1150, i -> i + 50).forEach(i -> this.sallarys.add(i));
+//        for (int i = 1000; i <= 1150; i += 50) {
+//            this.sallarys.add(i);
+//        }
     }
 
     public void setSallarys(ArrayList<Integer> sallarys) {
         this.sallarys = sallarys;
     }
-    public void setCurensy(ArrayList<String> curensy){
-        this.curensy = curensy;
 
+    public void setCurensy(ArrayList<String> curensy) {
+        this.curensy = curensy;
     }
 
     private void curensyCreator() {
-        this.curensy.add("USD");
-        this.curensy.add("Hrn");
-        this.curensy.add("EUR");
+        Arrays.asList("USD", "Hrn", "EUR").forEach(s -> this.curensy.add(s));
+//        for (String s : Arrays.asList("USD", "Hrn", "EUR")) {
+//            this.curensy.add(s);
+//        }
     }
 
 
