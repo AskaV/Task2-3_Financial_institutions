@@ -19,6 +19,10 @@ public class Main {
         BusinessLogic businessLogic = new BusinessLogic();
         businessLogic.start();
 
+        LOGGER.info("------------------------creating classes by reflection------------------------");
+
+
+
 //        int[] unsMass = new int[]{20, 1, 19, 1, 14};
 //        new myLinkedListGetAndAdd();
 //        for (int i = 1; i < unsMass.length; i++) {
