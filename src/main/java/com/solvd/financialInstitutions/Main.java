@@ -26,7 +26,7 @@ public class Main {
 
 
 
-        
+
         LOGGER.info("------------------------creating classes by reflection------------------------");
         ClientsNaturalP naturalP2 = new ClientsNaturalP();
 
