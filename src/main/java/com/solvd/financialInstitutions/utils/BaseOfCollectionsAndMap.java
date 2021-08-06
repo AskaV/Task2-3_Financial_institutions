@@ -29,10 +29,17 @@ public class BaseOfCollectionsAndMap {
     public Integer getRandomAge() {
         return ages.get(randomisePos(ages));
     }
-
     public String getRandomName() {
         return names.get(randomisePos(names));
     }
+    public String getRandomCurensy() {
+        return curensy.get(randomisePos(curensy));
+    }
+    public Integer getRandomSallarys() {
+        return sallarys.get(randomisePos(sallarys));
+    }
+
+
 
     public void printHashMap() {
         //FinInstClients.values().forEach(System.out::println);
