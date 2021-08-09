@@ -1,11 +1,28 @@
 package com.solvd.financialInstitutions.utils.threads;
 
-public class Connection {
+import com.solvd.financialInstitutions.utils.BusinessLogic;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-    //methods
-    //1/ping BD
-    //Auth BD
-    //getInfo DB
-    //execute query
-    //close
+public class Connection {//method just LOG information
+    private static final Logger LOGGER = LogManager.getLogger(BusinessLogic.class);
+
+    Connection(){
+    }
+    private void pingBD(String pingBDTest){
+        LOGGER.info(pingBDTest);
+    }
+    private void authBD(String authBD){
+        LOGGER.info(authBD);
+    }
+    private void infoBD(String infoBD){
+        LOGGER.info(infoBD);
+    }
+    private void executeQuery(String executeQuery){//can call by threads
+        LOGGER.info(executeQuery);
+    }
+    private void close(String close){
+        LOGGER.info(close);
+    }
+
 }
