@@ -7,6 +7,6 @@ target/
 *.jar
 .gitattributes
 out/production/Tanda_proj/log4j2.xml
-
+*.iml
 
 src/main/java/com/solvd/financialInstitutions/utils/MyLinkedListGetAndAdd.java
