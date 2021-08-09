@@ -5,11 +5,11 @@ import com.solvd.financialInstitutions.clients.ClientsGovernment;
 import com.solvd.financialInstitutions.clients.ClientsLegalP;
 import com.solvd.financialInstitutions.clients.ClientsNaturalP;
 import com.solvd.financialInstitutions.finInst.*;
-import com.solvd.financialInstitutions.staff.StaffBooker;
-import com.solvd.financialInstitutions.staff.StaffCashier;
-import com.solvd.financialInstitutions.staff.StaffDirector;
-import com.solvd.financialInstitutions.staff.StaffGuard;
+import com.solvd.financialInstitutions.staff.*;
+import com.solvd.financialInstitutions.utils.enums.ClMale;
 import com.solvd.financialInstitutions.utils.generics.ClientsGeneric;
+import com.solvd.financialInstitutions.utils.generics.FnInstGeneric;
+import com.solvd.financialInstitutions.utils.generics.StaffGeneric;
 import com.solvd.financialInstitutions.utils.interfaces.*;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.DateUtils;
@@ -17,6 +17,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
+import java.lang.reflect.Field;
 import java.text.ParseException;
 import java.util.Date;
 import java.util.List;
@@ -54,14 +55,14 @@ public class BusinessLogic {
         FinInInvestmentCompany investmentCompany1 = new FinInInvestmentCompany(1001, "Investment Co", "EUR", false, "Petya");
         FinInPopshop popShop1 = new FinInPopshop(1002, "Finik", "EUR", false, "Галочка");
         FinInDealer dealer1 = new FinInDealer(1003, "Dillik", "USD", false, "multy");
-        FinInBroker broker1 = new FinInBroker(1004, "Brokik", "EUR", false, "mini");
+        FinInBroker broker1 = new FinInBroker(1004, "Brokik", "RUB", false, "mini");
         //Init Staff
         StaffGuard guard1 = new StaffGuard("Vasya", 44, 1100, 404);
         StaffDirector director1 = new StaffDirector("Durik", 20, 1000000, "Government", guard1);
         StaffCashier cashier1 = new StaffCashier("Karina", 19, 1000, "Mazda");
         StaffBooker booker1 = new StaffBooker("Marina", 48, 1200, "Kek");
         //Init Clients
-        ClientsNaturalP naturalP1 = new ClientsNaturalP("Marik", 20, "Male", 35, "2001/01/15");
+        ClientsNaturalP naturalP1 = new ClientsNaturalP("Marik", 20, "MALE", 35, "2001/01/15");
         ClientsLegalP legalLp1 = new ClientsLegalP("\"OOO Company\"", 10000, "Kyiv, Khreshchatyk 4", "1957/12/15");
         ClientsGovernment government1 = new ClientsGovernment("Government", 1000000000, 20,"1900/12/15");
 
@@ -218,6 +219,20 @@ public class BusinessLogic {
         List<ClientsBase> clientsBaseList = clGovGeneriс.getClientsBase();
         //System.out.println(clientsBaseList);
 
+        FnInstGeneric<FinInBase> finInstGeneric = new FnInstGeneric<>();
+        FinInBroker finInstBrokerGeneric = new FinInBroker();
+        FinInDealer finInstDealerGeneric = new FinInDealer();
+        finInstGeneric.getClientsBase().add(finInstBrokerGeneric);
+        finInstGeneric.getClientsBase().add(finInstDealerGeneric);
+        List<FinInBase> clientsFinInBaseList = finInstGeneric.getClientsBase();
+
+        StaffGeneric<StaffBase> staffGeneric = new StaffGeneric<>();
+        StaffBooker staffBookerGeneric = new StaffBooker();
+        StaffCashier staffCashierGeneric = new StaffCashier();
+        staffGeneric.getClientsBase().add(staffBookerGeneric);
+        staffGeneric.getClientsBase().add(staffCashierGeneric);
+        List<StaffBase> clientsStaffGeneric = staffGeneric.getClientsBase();
+
         LOGGER.info("------------------------Collections and map examples------------------------");
 
         BaseOfCollectionsAndMap baseOfValues = new BaseOfCollectionsAndMap();
@@ -243,8 +258,43 @@ public class BusinessLogic {
             e.printStackTrace();
         }
 
+        LOGGER.info("------------------------creating classes by reflection------------------------");
+//        try {
+//            Class clazz = Class.forName("com.solvd.financialInstitutions.clients.ClientsNaturalP");
+//            Class superClass = clazz.getSuperclass();
+//            superClass.getFields();
+//            superClass.getDeclaredFields();
+//
+//        }
+//        catch (ClassNotFoundException e){
+//            LOGGER.error("class not found", e);
+//        }
 
+        BaseOfCollectionsAndMap newData = new BaseOfCollectionsAndMap();
+        //ClientsNaturalP naturalP2 = new ClientsNaturalP();
 
+        //String sexOfPerson = null;
+        //int clientAge = 0;
+        //String clientName = null;
+        try {
+            Class naturalP2 = Class.forName("com.solvd.financialInstitutions.clients.ClientsNaturalP");
+            Field field = ClientsNaturalP.class.getDeclaredField("sexOfPerson");
+            field.setAccessible(true);
+//            field.set(naturalP2, (String) "FEMALE");
+//            sexOfPerson = (String) field.get(naturalP2);
+
+            Field field1 = ClientsNaturalP.class.getDeclaredField("clientAge");//Field field1 = naturalP2.getClass().getDeclaredField("clientAge");
+            field1.setAccessible(true);
+//            field1.set(naturalP2, (Integer) newData.getRandomAge());
+//            clientAge = (Integer) field1.get(naturalP2);
+
+            Field field2 = ClientsNaturalP.class.getSuperclass().getDeclaredField("clientName");  //does not work
+            field2.setAccessible(true);                                                //how to access a base class variable??
+//            field2.set(naturalP2, (String) newData.getRandomName());                   //does not work
+//            clientName = (String) field2.get(naturalP2);                               //does not work
+        } catch (NoSuchFieldException | ClassNotFoundException e) { // | IllegalAccessException
+            e.printStackTrace();
+        }
 
     }
 }

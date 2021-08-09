@@ -2,6 +2,7 @@ package com.solvd.financialInstitutions.clients;
 
 import com.solvd.financialInstitutions.finInst.FInInBank;
 import com.solvd.financialInstitutions.staff.StaffCashier;
+import com.solvd.financialInstitutions.utils.enums.ClMale;
 import org.apache.commons.lang3.time.DateUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,31 +11,19 @@ import java.text.ParseException;
 import java.util.Date;
 
 public class ClientsNaturalP extends ClientsBase {
-    private String sexOfPerson;
+    private ClMale sexOfPerson;
     private int clientAge;
     private Date birthday;
 
     private static final Logger LOGGER = LogManager.getLogger(ClientsNaturalP.class);
 
-    private enum clMale {
-
-        MALE("Male gender"),
-        FEMALE("Female gender"),
-        THIRD_SEX("Third gender");
-
-        private String itemName;
-
-        private clMale(String itemName) {
-            this.itemName = itemName;
-        }
-    }
 
     public ClientsNaturalP() {
     }
 
     public ClientsNaturalP(String name, int money, String ClientMale, int clientAge, String personBirthday) {
         super(name, money);
-        this.sexOfPerson = ClientMale;
+        this.sexOfPerson = ClMale.valueOf(ClientMale);
         this.clientAge = clientAge;
         try {
             birthday = DateUtils.parseDateStrictly(personBirthday, new String[]{"yyyy/MM/dd"});
@@ -54,7 +43,8 @@ public class ClientsNaturalP extends ClientsBase {
         CashiersId.creditWorthiness(BanksId, NaturalPId);
     }
 
-    public void setSexOfPerson(String setClientMale) {
+
+    public void setSexOfPerson(ClMale setClientMale) {
         this.sexOfPerson = setClientMale;
     }
 
@@ -62,7 +52,7 @@ public class ClientsNaturalP extends ClientsBase {
         this.clientAge = setClientAge;
     }
 
-    public String getSexOfPerson() {
+    public ClMale getSexOfPerson() {
         return this.sexOfPerson;
     }
 

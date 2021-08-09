@@ -61,9 +61,8 @@ public class BaseOfCollectionsAndMap {
     }
 
     private void nameCreator() {
-        for (String s : Arrays.asList("Angela", "Kristi", "Markus", "Martin")) {
-            names.add(s);
-        }
+        Arrays.asList("Angela", "Kristi", "Markus", "Martin")
+                .stream().forEach(s -> names.add(s));
     }
 
     public void setNewName(String newName) {

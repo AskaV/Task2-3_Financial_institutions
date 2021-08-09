@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ClientsGeneric<T extends ClientsBase> {
-    private T t;
 
+    private T t;
     private List<T> clients = new ArrayList<>();
 
     public List<T> getClientsBase() {

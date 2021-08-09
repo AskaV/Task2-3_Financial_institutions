@@ -1,5 +1,6 @@
 package com.solvd.financialInstitutions.finInst;
 
+import com.solvd.financialInstitutions.utils.enums.Currencyes;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -7,23 +8,9 @@ import org.apache.logging.log4j.Logger;
 public abstract class FinInBase {
     private int instMoney;
     private String instName;
-    private String currency;// USD, UAH, EUR
+    private Currencyes currency;// USD, UAH, EUR
     private boolean creditPossibility;
     private static final Logger LOGGER = LogManager.getLogger(FinInBase.class);
-
-    private enum currencyes {
-
-        USD("U.S. dollar"),
-        UAH("Ukrainian hryvnia"),
-        EUR("Euro"),
-        RUB("Russian ruble");
-
-        private String itemName;
-
-        private currencyes(String itemName) {
-            this.itemName = itemName;
-        }
-    }
 
 
 
@@ -33,7 +20,7 @@ public abstract class FinInBase {
     public FinInBase(int instMoney, String instName, String currency, boolean creditPossibility) {
         this.instMoney = instMoney;
         this.instName = StringUtils.capitalize(instName);
-        this.currency = currency;
+        this.currency = Currencyes.valueOf(currency);
         this.creditPossibility = creditPossibility;
     }
 
@@ -54,7 +41,7 @@ public abstract class FinInBase {
     }
 
     public void setInstCurrency(String setInstCurrency) {
-        this.currency = setInstCurrency;
+        this.currency = Currencyes.valueOf(setInstCurrency);
     }
 
     public void setCreditPossibility(boolean setCreditPossibility) {
@@ -69,7 +56,7 @@ public abstract class FinInBase {
         return this.instName;
     }
 
-    public String getInstCurrency() {
+    public Currencyes getInstCurrency() {
         return this.currency;
     }
 

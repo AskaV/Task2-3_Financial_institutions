@@ -3,6 +3,7 @@ package com.solvd.financialInstitutions.staff;
 import com.solvd.financialInstitutions.clients.ClientsNaturalP;
 import com.solvd.financialInstitutions.finInst.FInInBank;
 import com.solvd.financialInstitutions.finInst.FinInBase;
+import com.solvd.financialInstitutions.utils.enums.Currencyes;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -24,8 +25,8 @@ public class StaffCashier extends StaffBase {
         return money;
     }
 
-    public String chekCurensy(FInInBank bankName) {
-        String curensy = bankName.getInstCurrency();
+    public Currencyes chekCurensy(FInInBank bankName) {
+        Currencyes curensy = bankName.getInstCurrency();
         return curensy;
     }
 
