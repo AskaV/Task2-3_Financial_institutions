@@ -22,7 +22,7 @@ public class WorkWithText {
 
     private void writingToFile(String fileURL) throws IOException {
         File myFile = new File(fileURL+"/OutputFile.txt");
-        if (myFile.exists()) FileUtils.delete(myFile);
+        if (myFile.exists()) myFile.delete();
         WordValuePairs.forEach((key, value) -> {
             try {
                 FileUtils.writeStringToFile(myFile, key + " , " + value + "\n", "UTF-8", true);
