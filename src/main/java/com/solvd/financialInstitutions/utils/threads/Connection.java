@@ -9,6 +9,7 @@ public class Connection {//method just LOG information
 
     Connection(){
     }
+//they are used in the class Threads as  Method m = Connection.class.getDeclaredMethod
     private void pingBD(String pingBDTest){
         LOGGER.info(pingBDTest);
     }

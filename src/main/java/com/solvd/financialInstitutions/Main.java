@@ -3,11 +3,13 @@ package com.solvd.financialInstitutions;
 
 import com.solvd.financialInstitutions.utils.*;
 import com.solvd.financialInstitutions.utils.textAnalize.WorkWithText;
+import com.solvd.financialInstitutions.utils.threads.Threads;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
-
+import java.util.ArrayList;
+import java.util.stream.Stream;
 
 
 public class Main {
@@ -22,6 +24,13 @@ public class Main {
         BusinessLogic businessLogic = new BusinessLogic();
         businessLogic.start();
 
+        LOGGER.info("------------------------threads------------------------");
+        ArrayList<String> connection =  new ArrayList<>();// ned to contains 5 conections
+        Stream.of("pingBD", "authBD", "infoBD", "executeQuery", "close").forEach(s -> connection.add(s));
+        System.out.println("Main thread started...");
+        for(int i=1; i < 6; i++)
+            new Threads("   Thread"+i, connection.get(i - 1)).start();
+        System.out.println("Main thread finished...");
         int t;
 
 
