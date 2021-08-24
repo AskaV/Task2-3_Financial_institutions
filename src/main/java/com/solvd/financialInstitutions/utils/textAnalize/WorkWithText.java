@@ -9,21 +9,22 @@ import java.io.IOException;
 import java.util.*;
 
 public class WorkWithText {
-    private Map<String, Integer> WordValuePairs;
+    private Map<String, Integer> wordValuePairs;
 
     public WorkWithText(String fileURL) throws IOException {
             textAnalize(fileURL);
             writingToFile(fileURL);
     }
     private void textAnalize(String fileURL) throws IOException {
-        String contents = StringUtils.lowerCase(FileUtils.readFileToString(new File(fileURL+"/TextFI.txt"), "UTF-8"));
-        WordValuePairs = CollectionUtils.getCardinalityMap(Arrays.asList(contents.split("[\"\\.,:;\\s]+")));
+        //wordValuePairs = CollectionUtils.getCardinalityMap(FileUtils.readLines(new File(fileURL+ "/textAnalise/TextFI.txt"), "UTF-8"));
+        String contents = StringUtils.lowerCase(FileUtils.readFileToString(new File(fileURL+ "/textAnalise/TextFI.txt"), "UTF-8"));
+        wordValuePairs = CollectionUtils.getCardinalityMap(Arrays.asList(contents.split("[\"\\.,:;\\s]+")));
     }
 
     private void writingToFile(String fileURL) throws IOException {
-        File myFile = new File(fileURL+"/OutputFile.txt");
+        File myFile = new File(fileURL+ "/textAnalise/OutputFile.txt");
         if (myFile.exists()) myFile.delete();
-        WordValuePairs.forEach((key, value) -> {
+        wordValuePairs.forEach((key, value) -> {
             try {
                 FileUtils.writeStringToFile(myFile, key + " , " + value + "\n", "UTF-8", true);
             } catch (IOException e) {

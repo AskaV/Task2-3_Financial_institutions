@@ -1,5 +1,4 @@
 package com.solvd.financialInstitutions.utils.threads;
-
 import java.lang.reflect.Method;
 
 import static com.solvd.financialInstitutions.utils.threads.ConnectionPool.getInstance;
@@ -11,12 +10,15 @@ public class Threads extends Thread { //for gen threads
     }
 
     public void run(){
-        getInstance();
+        //getInstance();
+        ConnectionPool.getInstance();
+
         Connection conName = new Connection();
         System.out.printf("%s started... \n", Thread.currentThread().getName());
         try{
             Thread.sleep(500);
             Method m = Connection.class.getDeclaredMethod(String.valueOf(conName), void.class);
+            System.out.println(m);
         }
         catch(InterruptedException | NoSuchMethodException e){
             System.out.println("Thread has been interrupted");

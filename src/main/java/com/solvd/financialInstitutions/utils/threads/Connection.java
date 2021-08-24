@@ -7,9 +7,12 @@ import org.apache.logging.log4j.Logger;
 public class Connection {//method just LOG information
     private static final Logger LOGGER = LogManager.getLogger(BusinessLogic.class);
 
-    Connection(){
+    public Connection(){
     }
 //they are used in the class Threads as  Method m = Connection.class.getDeclaredMethod
+    private void open(String open){
+    LOGGER.info(open);
+}
     private void pingBD(String pingBDTest){
         LOGGER.info(pingBDTest);
     }
